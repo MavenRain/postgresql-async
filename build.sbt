@@ -45,14 +45,14 @@ val baseSettings = Seq(
         </license>
       </licenses>
       <scm>
-        <url>git@github.com:mauricio/postgresql-netty.git</url>
-        <connection>scm:git:git@github.com:mauricio/postgresql-netty.git</connection>
+        <url>git@github.com:mavenrain/postgresql-netty.git</url>
+        <connection>scm:git:git@github.com:mavenrain/postgresql-netty.git</connection>
       </scm>
       <developers>
         <developer>
-          <id>mauricio</id>
-          <name>Maurício Linhares</name>
-          <url>https://github.com/mauricio</url>
+          <id>mavenrain</id>
+          <name>Onyeka Obi</name>
+          <url>https://github.com/MavenRain</url>
         </developer>
       </developers>
     )
