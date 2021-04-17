@@ -1,4 +1,4 @@
-package com.github.mauricio.async.db.mysql.message.server
+package io.github.mavenrain.async.db.mysql.message.server
 
 case class AuthenticationSwitchRequest(
                                         method : String,

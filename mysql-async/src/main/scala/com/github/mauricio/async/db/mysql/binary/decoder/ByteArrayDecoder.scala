@@ -14,10 +14,10 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.binary.decoder
+package io.github.mavenrain.async.db.mysql.binary.decoder
 
 import io.netty.buffer.ByteBuf
-import com.github.mauricio.async.db.util.ChannelWrapper.bufferToWrapper
+import io.github.mavenrain.async.db.util.ChannelWrapper.bufferToWrapper
 
 object ByteArrayDecoder extends BinaryDecoder {
   def decode(buffer: ByteBuf): Any = {

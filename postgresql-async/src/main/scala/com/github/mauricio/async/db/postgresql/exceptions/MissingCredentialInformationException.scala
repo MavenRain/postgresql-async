@@ -15,10 +15,10 @@
  */
 
 
-package com.github.mauricio.async.db.postgresql.exceptions
+package io.github.mavenrain.async.db.postgresql.exceptions
 
-import com.github.mauricio.async.db.exceptions.DatabaseException
-import com.github.mauricio.async.db.postgresql.messages.backend.AuthenticationResponseType
+import io.github.mavenrain.async.db.exceptions.DatabaseException
+import io.github.mavenrain.async.db.postgresql.messages.backend.AuthenticationResponseType
 
 class MissingCredentialInformationException(
                                              val username: String,

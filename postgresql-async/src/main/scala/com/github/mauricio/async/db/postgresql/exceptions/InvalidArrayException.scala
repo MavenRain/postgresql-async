@@ -15,8 +15,8 @@
  */
 
 
-package com.github.mauricio.async.db.postgresql.exceptions
+package io.github.mavenrain.async.db.postgresql.exceptions
 
-import com.github.mauricio.async.db.exceptions.DatabaseException
+import io.github.mavenrain.async.db.exceptions.DatabaseException
 
 class InvalidArrayException(message: String) extends DatabaseException(message)

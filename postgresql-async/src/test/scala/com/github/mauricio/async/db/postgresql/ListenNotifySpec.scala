@@ -14,11 +14,11 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql
+package io.github.mavenrain.async.db.postgresql
 
 import org.specs2.mutable.Specification
 import java.util.UUID
-import com.github.mauricio.async.db.postgresql.messages.backend.NotificationResponse
+import io.github.mavenrain.async.db.postgresql.messages.backend.NotificationResponse
 
 class ListenNotifySpec extends Specification with DatabaseTestHelper {
 

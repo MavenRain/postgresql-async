@@ -15,7 +15,7 @@
  */
 
 
-package com.github.mauricio.async.db.pool
+package io.github.mavenrain.async.db.pool
 
 /**
  *

@@ -14,11 +14,11 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.column
+package io.github.mavenrain.async.db.postgresql.column
 
 import java.nio.ByteBuffer
 
-import com.github.mauricio.async.db.column._
+import io.github.mavenrain.async.db.column._
 import io.netty.buffer.ByteBuf
 import org.joda.time._
 

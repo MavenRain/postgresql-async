@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.exceptions
+package io.github.mavenrain.async.db.mysql.exceptions
 
-import com.github.mauricio.async.db.exceptions.DatabaseException
+import io.github.mavenrain.async.db.exceptions.DatabaseException
 import java.nio.charset.Charset
 
 class CharsetMappingNotAvailableException (charset : Charset)

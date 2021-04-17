@@ -14,14 +14,14 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.codec
+package io.github.mavenrain.async.db.mysql.codec
 
-import com.github.mauricio.async.db.exceptions._
-import com.github.mauricio.async.db.mysql.decoder._
-import com.github.mauricio.async.db.mysql.message.server._
-import com.github.mauricio.async.db.util.ByteBufferUtils.read3BytesInt
-import com.github.mauricio.async.db.util.ChannelWrapper.bufferToWrapper
-import com.github.mauricio.async.db.util.{BufferDumper, Log}
+import io.github.mavenrain.async.db.exceptions._
+import io.github.mavenrain.async.db.mysql.decoder._
+import io.github.mavenrain.async.db.mysql.message.server._
+import io.github.mavenrain.async.db.util.ByteBufferUtils.read3BytesInt
+import io.github.mavenrain.async.db.util.ChannelWrapper.bufferToWrapper
+import io.github.mavenrain.async.db.util.{BufferDumper, Log}
 import io.netty.buffer.ByteBuf
 import io.netty.channel.ChannelHandlerContext
 import io.netty.handler.codec.ByteToMessageDecoder

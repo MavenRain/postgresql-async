@@ -14,10 +14,10 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql
+package io.github.mavenrain.async.db.mysql
 
-import com.github.mauricio.async.db.Configuration
-import com.github.mauricio.async.db.util.FutureUtils.awaitFuture
+import io.github.mavenrain.async.db.Configuration
+import io.github.mavenrain.async.db.util.FutureUtils.awaitFuture
 import org.specs2.mutable.Specification
 
 class MySQLConnectionSpec extends Specification {

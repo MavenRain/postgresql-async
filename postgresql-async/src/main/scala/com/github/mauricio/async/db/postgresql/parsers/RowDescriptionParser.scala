@@ -14,10 +14,10 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.parsers
+package io.github.mavenrain.async.db.postgresql.parsers
 
-import com.github.mauricio.async.db.postgresql.messages.backend.{RowDescriptionMessage, PostgreSQLColumnData, ServerMessage}
-import com.github.mauricio.async.db.util.ByteBufferUtils
+import io.github.mavenrain.async.db.postgresql.messages.backend.{RowDescriptionMessage, PostgreSQLColumnData, ServerMessage}
+import io.github.mavenrain.async.db.util.ByteBufferUtils
 import java.nio.charset.Charset
 import io.netty.buffer.ByteBuf
 

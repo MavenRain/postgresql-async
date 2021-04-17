@@ -14,8 +14,8 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.messages.frontend
+package io.github.mavenrain.async.db.postgresql.messages.frontend
 
-import com.github.mauricio.async.db.postgresql.messages.backend.ServerMessage
+import io.github.mavenrain.async.db.postgresql.messages.backend.ServerMessage
 
 object CloseMessage extends ClientMessage(ServerMessage.Close)

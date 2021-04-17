@@ -1,7 +1,7 @@
-package com.github.mauricio.async.db.postgresql
+package io.github.mavenrain.async.db.postgresql
 
 import org.specs2.mutable.Specification
-import com.github.mauricio.async.db.SSLConfiguration.Mode
+import io.github.mavenrain.async.db.SSLConfiguration.Mode
 import javax.net.ssl.SSLHandshakeException
 
 class PostgreSQLSSLConnectionSpec extends Specification with DatabaseTestHelper {

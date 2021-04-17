@@ -14,16 +14,16 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql
+package io.github.mavenrain.async.db.postgresql
 
-import com.github.mauricio.async.db.util.Log
-import com.github.mauricio.async.db.{Connection, Configuration}
+import io.github.mavenrain.async.db.util.Log
+import io.github.mavenrain.async.db.{Connection, Configuration}
 import java.io.File
 import java.util.concurrent.{TimeoutException, TimeUnit}
 import scala.concurrent.duration._
 import scala.concurrent.{Future, Await}
-import com.github.mauricio.async.db.SSLConfiguration
-import com.github.mauricio.async.db.SSLConfiguration.Mode
+import io.github.mavenrain.async.db.SSLConfiguration
+import io.github.mavenrain.async.db.SSLConfiguration.Mode
 
 object DatabaseTestHelper {
   val log = Log.get[DatabaseTestHelper]

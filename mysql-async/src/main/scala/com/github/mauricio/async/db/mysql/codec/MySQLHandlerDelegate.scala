@@ -14,10 +14,10 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.codec
+package io.github.mavenrain.async.db.mysql.codec
 
-import com.github.mauricio.async.db.ResultSet
-import com.github.mauricio.async.db.mysql.message.server._
+import io.github.mavenrain.async.db.ResultSet
+import io.github.mavenrain.async.db.mysql.message.server._
 import io.netty.channel.ChannelHandlerContext
 
 trait MySQLHandlerDelegate {

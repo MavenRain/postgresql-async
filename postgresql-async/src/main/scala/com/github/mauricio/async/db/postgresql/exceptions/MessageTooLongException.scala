@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.exceptions
+package io.github.mavenrain.async.db.postgresql.exceptions
 
-import com.github.mauricio.async.db.exceptions.DatabaseException
+import io.github.mavenrain.async.db.exceptions.DatabaseException
 
 class MessageTooLongException( code : Byte, length : Int, limit : Int )
   extends DatabaseException("Message of type %d has size %d, higher than the limit %d".format(code, length, limit))

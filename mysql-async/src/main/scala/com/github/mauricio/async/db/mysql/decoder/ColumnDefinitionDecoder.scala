@@ -14,14 +14,14 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.decoder
+package io.github.mavenrain.async.db.mysql.decoder
 
 import io.netty.buffer.ByteBuf
-import com.github.mauricio.async.db.mysql.message.server.ColumnDefinitionMessage
-import com.github.mauricio.async.db.util.ChannelWrapper.bufferToWrapper
-import com.github.mauricio.async.db.util.Log
+import io.github.mavenrain.async.db.mysql.message.server.ColumnDefinitionMessage
+import io.github.mavenrain.async.db.util.ChannelWrapper.bufferToWrapper
+import io.github.mavenrain.async.db.util.Log
 import java.nio.charset.Charset
-import com.github.mauricio.async.db.mysql.codec.DecoderRegistry
+import io.github.mavenrain.async.db.mysql.codec.DecoderRegistry
 
 object ColumnDefinitionDecoder {
   final val log = Log.get[ColumnDefinitionDecoder]

@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.column
+package io.github.mavenrain.async.db.mysql.column
 
-import com.github.mauricio.async.db.column.ColumnDecoder
+import io.github.mavenrain.async.db.column.ColumnDecoder
 import scala.concurrent.duration._
 
 object TimeDecoder extends ColumnDecoder {

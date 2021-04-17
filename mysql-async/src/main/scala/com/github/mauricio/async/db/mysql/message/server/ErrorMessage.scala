@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.message.server
+package io.github.mavenrain.async.db.mysql.message.server
 
 case class ErrorMessage( errorCode : Int, sqlState : String, errorMessage : String )
   extends ServerMessage( ServerMessage.Error )

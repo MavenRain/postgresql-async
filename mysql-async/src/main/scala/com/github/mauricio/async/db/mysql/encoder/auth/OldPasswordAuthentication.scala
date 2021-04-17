@@ -1,4 +1,4 @@
-package com.github.mauricio.async.db.mysql.encoder.auth
+package io.github.mavenrain.async.db.mysql.encoder.auth
 
 import java.nio.charset.Charset
 import java.nio.CharBuffer

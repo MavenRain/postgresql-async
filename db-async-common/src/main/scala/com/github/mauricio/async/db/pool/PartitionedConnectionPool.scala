@@ -1,7 +1,7 @@
-package com.github.mauricio.async.db.pool;
+package io.github.mavenrain.async.db.pool;
 
-import com.github.mauricio.async.db.util.ExecutorServiceUtils
-import com.github.mauricio.async.db.{ QueryResult, Connection }
+import io.github.mavenrain.async.db.util.ExecutorServiceUtils
+import io.github.mavenrain.async.db.{ QueryResult, Connection }
 import scala.concurrent.{ ExecutionContext, Future }
 
 class PartitionedConnectionPool[T <: Connection](

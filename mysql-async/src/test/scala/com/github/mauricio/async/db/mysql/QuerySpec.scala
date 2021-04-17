@@ -14,17 +14,17 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql
+package io.github.mavenrain.async.db.mysql
 
-import com.github.mauricio.async.db.mysql.exceptions.MySQLException
+import io.github.mavenrain.async.db.mysql.exceptions.MySQLException
 import org.joda.time._
 import org.specs2.mutable.Specification
 import scala.concurrent.duration.Duration
 import java.util.concurrent.TimeUnit
 import io.netty.util.CharsetUtil
-import com.github.mauricio.async.db.exceptions.InsufficientParametersException
+import io.github.mavenrain.async.db.exceptions.InsufficientParametersException
 import org.specs2.matcher.MatchResult
-import com.github.mauricio.async.db.{QueryResult, ResultSet}
+import io.github.mavenrain.async.db.{QueryResult, ResultSet}
 
 class QuerySpec extends Specification with ConnectionHelper {
 

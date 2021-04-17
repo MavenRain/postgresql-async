@@ -14,11 +14,11 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.column
+package io.github.mavenrain.async.db.column
 
 import org.joda.time.format.DateTimeFormat
 import org.joda.time.{ReadablePartial, LocalDate}
-import com.github.mauricio.async.db.exceptions.DateEncoderNotAvailableException
+import io.github.mavenrain.async.db.exceptions.DateEncoderNotAvailableException
 
 object DateEncoderDecoder extends ColumnEncoderDecoder {
 

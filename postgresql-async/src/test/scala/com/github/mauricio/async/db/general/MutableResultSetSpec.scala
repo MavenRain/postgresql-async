@@ -14,10 +14,10 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.general
+package io.github.mavenrain.async.db.general
 
-import com.github.mauricio.async.db.postgresql.column.{PostgreSQLColumnDecoderRegistry, ColumnTypes}
-import com.github.mauricio.async.db.postgresql.messages.backend.PostgreSQLColumnData
+import io.github.mavenrain.async.db.postgresql.column.{PostgreSQLColumnDecoderRegistry, ColumnTypes}
+import io.github.mavenrain.async.db.postgresql.messages.backend.PostgreSQLColumnData
 import org.specs2.mutable.Specification
 import io.netty.util.CharsetUtil
 import io.netty.buffer.{Unpooled, ByteBuf}

@@ -1,3 +1,3 @@
-package com.github.mauricio.async.db.postgresql.messages.frontend
+package io.github.mavenrain.async.db.postgresql.messages.frontend
 
 trait InitialClientMessage

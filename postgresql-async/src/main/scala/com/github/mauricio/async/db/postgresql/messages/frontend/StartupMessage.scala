@@ -14,6 +14,6 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.messages.frontend
+package io.github.mavenrain.async.db.postgresql.messages.frontend
 
 class StartupMessage(val parameters: List[(String, Any)]) extends InitialClientMessage

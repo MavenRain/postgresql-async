@@ -1,11 +1,11 @@
-package com.github.mauricio.async.db.mysql
+package io.github.mavenrain.async.db.mysql
 
 import org.specs2.mutable.Specification
 import java.util.UUID
 import java.nio.ByteBuffer
 import io.netty.buffer.Unpooled
 import io.netty.util.CharsetUtil
-import com.github.mauricio.async.db.RowData
+import io.github.mavenrain.async.db.RowData
 
 class BinaryColumnsSpec extends Specification with ConnectionHelper {
 

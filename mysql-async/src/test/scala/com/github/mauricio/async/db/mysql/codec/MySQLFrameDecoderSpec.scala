@@ -14,16 +14,16 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.codec
+package io.github.mavenrain.async.db.mysql.codec
 
 import io.netty.buffer.ByteBuf
 import io.netty.util.CharsetUtil
-import com.github.mauricio.async.db.mysql.message.server._
-import com.github.mauricio.async.db.util.ByteBufferUtils
-import com.github.mauricio.async.db.util.ChannelWrapper.bufferToWrapper
+import io.github.mavenrain.async.db.mysql.message.server._
+import io.github.mavenrain.async.db.util.ByteBufferUtils
+import io.github.mavenrain.async.db.util.ChannelWrapper.bufferToWrapper
 import org.specs2.mutable.Specification
-import com.github.mauricio.async.db.mysql.message.server.OkMessage
-import com.github.mauricio.async.db.mysql.column.ColumnTypes
+import io.github.mavenrain.async.db.mysql.message.server.OkMessage
+import io.github.mavenrain.async.db.mysql.column.ColumnTypes
 import io.netty.channel.embedded.EmbeddedChannel
 
 class MySQLFrameDecoderSpec extends Specification {

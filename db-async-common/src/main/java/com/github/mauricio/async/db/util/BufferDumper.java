@@ -1,4 +1,4 @@
-package com.github.mauricio.async.db.util;
+package io.github.mavenrain.async.db.util;
 
 import io.netty.buffer.ByteBuf;
 

@@ -14,8 +14,8 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.messages.frontend
+package io.github.mavenrain.async.db.postgresql.messages.frontend
 
-import com.github.mauricio.async.db.KindedMessage
+import io.github.mavenrain.async.db.KindedMessage
 
 class ClientMessage(val kind: Int) extends KindedMessage

@@ -14,11 +14,11 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.binary.decoder
+package io.github.mavenrain.async.db.mysql.binary.decoder
 
 import io.netty.buffer.ByteBuf
-import com.github.mauricio.async.db.util.ChannelWrapper.bufferToWrapper
-import com.github.mauricio.async.db.util.Log
+import io.github.mavenrain.async.db.util.ChannelWrapper.bufferToWrapper
+import io.github.mavenrain.async.db.util.Log
 import java.nio.charset.Charset
 
 object StringDecoder {

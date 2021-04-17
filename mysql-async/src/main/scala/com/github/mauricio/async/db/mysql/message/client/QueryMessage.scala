@@ -14,6 +14,6 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.message.client
+package io.github.mavenrain.async.db.mysql.message.client
 
 case class QueryMessage( query : String ) extends ClientMessage( ClientMessage.Query )

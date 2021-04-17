@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.column
+package io.github.mavenrain.async.db.mysql.column
 
 object ColumnTypes {
 

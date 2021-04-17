@@ -14,11 +14,11 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.util
+package io.github.mavenrain.async.db.postgresql.util
 
 import org.specs2.mutable.Specification
-import com.github.mauricio.async.db.SSLConfiguration.Mode
-import com.github.mauricio.async.db.exceptions.UnableToParseURLException
+import io.github.mavenrain.async.db.SSLConfiguration.Mode
+import io.github.mavenrain.async.db.exceptions.UnableToParseURLException
 
 class URLParserSpec extends Specification {
 

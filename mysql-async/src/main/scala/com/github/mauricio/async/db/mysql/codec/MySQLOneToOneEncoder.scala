@@ -14,14 +14,14 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.codec
+package io.github.mavenrain.async.db.mysql.codec
 
-import com.github.mauricio.async.db.exceptions.EncoderNotAvailableException
-import com.github.mauricio.async.db.mysql.binary.BinaryRowEncoder
-import com.github.mauricio.async.db.mysql.encoder._
-import com.github.mauricio.async.db.mysql.message.client.ClientMessage
-import com.github.mauricio.async.db.mysql.util.CharsetMapper
-import com.github.mauricio.async.db.util.{BufferDumper, ByteBufferUtils, Log}
+import io.github.mavenrain.async.db.exceptions.EncoderNotAvailableException
+import io.github.mavenrain.async.db.mysql.binary.BinaryRowEncoder
+import io.github.mavenrain.async.db.mysql.encoder._
+import io.github.mavenrain.async.db.mysql.message.client.ClientMessage
+import io.github.mavenrain.async.db.mysql.util.CharsetMapper
+import io.github.mavenrain.async.db.util.{BufferDumper, ByteBufferUtils, Log}
 import java.nio.charset.Charset
 import scala.annotation.switch
 import io.netty.channel.ChannelHandlerContext

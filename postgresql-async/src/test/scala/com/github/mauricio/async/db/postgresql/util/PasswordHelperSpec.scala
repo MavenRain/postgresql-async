@@ -1,4 +1,4 @@
-package com.github.mauricio.async.db.postgresql.util
+package io.github.mavenrain.async.db.postgresql.util
 
 import org.specs2.mutable.Specification
 import io.netty.util.CharsetUtil

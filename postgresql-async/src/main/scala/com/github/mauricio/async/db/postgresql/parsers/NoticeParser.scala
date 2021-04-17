@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.parsers
+package io.github.mavenrain.async.db.postgresql.parsers
 
-import com.github.mauricio.async.db.postgresql.messages.backend.{ServerMessage, NoticeMessage}
+import io.github.mavenrain.async.db.postgresql.messages.backend.{ServerMessage, NoticeMessage}
 import java.nio.charset.Charset
 
 class NoticeParser(charset: Charset) extends InformationParser(charset) {

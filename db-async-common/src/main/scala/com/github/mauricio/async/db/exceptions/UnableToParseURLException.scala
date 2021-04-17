@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.exceptions
+package io.github.mavenrain.async.db.exceptions
 
 /**
  * Thrown to indicate that a URL Parser could not understand the provided URL.

@@ -14,15 +14,15 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.encoder
+package io.github.mavenrain.async.db.mysql.encoder
 
 import java.nio.charset.Charset
 
-import com.github.mauricio.async.db.exceptions.UnsupportedAuthenticationMethodException
-import com.github.mauricio.async.db.mysql.encoder.auth.AuthenticationMethod
-import com.github.mauricio.async.db.mysql.message.client.{ClientMessage, HandshakeResponseMessage}
-import com.github.mauricio.async.db.mysql.util.CharsetMapper
-import com.github.mauricio.async.db.util.{ByteBufferUtils, Log}
+import io.github.mavenrain.async.db.exceptions.UnsupportedAuthenticationMethodException
+import io.github.mavenrain.async.db.mysql.encoder.auth.AuthenticationMethod
+import io.github.mavenrain.async.db.mysql.message.client.{ClientMessage, HandshakeResponseMessage}
+import io.github.mavenrain.async.db.mysql.util.CharsetMapper
+import io.github.mavenrain.async.db.util.{ByteBufferUtils, Log}
 import io.netty.buffer.ByteBuf
 
 object HandshakeResponseEncoder {
@@ -38,8 +38,8 @@ object HandshakeResponseEncoder {
 
 class HandshakeResponseEncoder(charset: Charset, charsetMapper: CharsetMapper) extends MessageEncoder {
 
-  import com.github.mauricio.async.db.mysql.encoder.HandshakeResponseEncoder._
-  import com.github.mauricio.async.db.mysql.util.MySQLIO._
+  import io.github.mavenrain.async.db.mysql.encoder.HandshakeResponseEncoder._
+  import io.github.mavenrain.async.db.mysql.util.MySQLIO._
 
   private val authenticationMethods = AuthenticationMethod.Availables
 

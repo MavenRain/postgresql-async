@@ -14,13 +14,13 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.pool
+package io.github.mavenrain.async.db.mysql.pool
 
-import com.github.mauricio.async.db.mysql.{MySQLConnection, ConnectionHelper}
-import com.github.mauricio.async.db.util.FutureUtils.awaitFuture
+import io.github.mavenrain.async.db.mysql.{MySQLConnection, ConnectionHelper}
+import io.github.mavenrain.async.db.util.FutureUtils.awaitFuture
 import org.specs2.mutable.Specification
 import scala.util._
-import com.github.mauricio.async.db.exceptions.ConnectionNotConnectedException
+import io.github.mavenrain.async.db.exceptions.ConnectionNotConnectedException
 import scala.util.Failure
 import org.specs2.matcher.MatchResult
 

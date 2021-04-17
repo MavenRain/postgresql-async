@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.util
+package io.github.mavenrain.async.db.util
 
-import com.github.mauricio.async.db.exceptions.UnknownLengthException
+import io.github.mavenrain.async.db.exceptions.UnknownLengthException
 import java.nio.charset.Charset
 import scala.language.implicitConversions
 import io.netty.buffer.ByteBuf

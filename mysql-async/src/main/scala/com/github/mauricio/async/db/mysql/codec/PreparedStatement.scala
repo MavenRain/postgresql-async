@@ -14,6 +14,6 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.codec
+package io.github.mavenrain.async.db.mysql.codec
 
 case class PreparedStatement ( statement : String, values : Seq[Any])

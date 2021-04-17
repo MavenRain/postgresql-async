@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.exceptions
+package io.github.mavenrain.async.db.exceptions
 
 class ConnectionStillRunningQueryException( connectionCount : Long, caughtRace : Boolean)
   extends DatabaseException ( "[%s] - There is a query still being run here - race -> %s".format(

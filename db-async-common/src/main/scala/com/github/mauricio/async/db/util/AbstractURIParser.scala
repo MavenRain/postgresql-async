@@ -13,13 +13,13 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package com.github.mauricio.async.db.util
+package io.github.mavenrain.async.db.util
 
 import java.net.{URI, URISyntaxException, URLDecoder}
 import java.nio.charset.Charset
 
-import com.github.mauricio.async.db.exceptions.UnableToParseURLException
-import com.github.mauricio.async.db.{Configuration, SSLConfiguration}
+import io.github.mavenrain.async.db.exceptions.UnableToParseURLException
+import io.github.mavenrain.async.db.{Configuration, SSLConfiguration}
 import org.slf4j.LoggerFactory
 
 import scala.util.matching.Regex

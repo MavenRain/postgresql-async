@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.message.server
+package io.github.mavenrain.async.db.mysql.message.server
 
 case class EOFMessage( warningCount : Int, flags : Int  )
   extends ServerMessage( ServerMessage.EOF )

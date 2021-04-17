@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.exceptions
+package io.github.mavenrain.async.db.exceptions
 
 class NegativeMessageSizeException( code : Byte, size : Int )
   extends DatabaseException( "Message of type %d had negative size %s".format(code, size) )

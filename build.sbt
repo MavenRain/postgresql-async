@@ -19,7 +19,7 @@ val baseSettings = Seq(
   scalacOptions in doc := Seq("-doc-external-doc:scala=http://www.scala-lang.org/archives/downloads/distrib/files/nightly/docs/library/"),
   crossScalaVersions := Seq(projectScalaVersion),
   javacOptions := Seq("-source", "11", "-target", "11", "-encoding", "UTF8"),
-  organization := "com.github.mauricio",
+  organization := "io.github.mavenrain",
   version := commonVersion,
   parallelExecution := false,
   publishArtifact in Test := false,

@@ -14,11 +14,11 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.column
+package io.github.mavenrain.async.db.column
 
 import java.nio.charset.Charset
 import io.netty.buffer.ByteBuf
-import com.github.mauricio.async.db.general.ColumnData
+import io.github.mavenrain.async.db.general.ColumnData
 
 trait ColumnDecoderRegistry {
 

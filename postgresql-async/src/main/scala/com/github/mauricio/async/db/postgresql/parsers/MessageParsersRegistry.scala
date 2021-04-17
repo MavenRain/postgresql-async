@@ -14,10 +14,10 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.parsers
+package io.github.mavenrain.async.db.postgresql.parsers
 
-import com.github.mauricio.async.db.exceptions.ParserNotAvailableException
-import com.github.mauricio.async.db.postgresql.messages.backend._
+import io.github.mavenrain.async.db.exceptions.ParserNotAvailableException
+import io.github.mavenrain.async.db.postgresql.messages.backend._
 import java.nio.charset.Charset
 import io.netty.buffer.ByteBuf
 

@@ -15,11 +15,11 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.column
+package io.github.mavenrain.async.db.postgresql.column
 
-import com.github.mauricio.async.db.column.ColumnEncoderDecoder
-import com.github.mauricio.async.db.exceptions.DateEncoderNotAvailableException
-import com.github.mauricio.async.db.util.Log
+import io.github.mavenrain.async.db.column.ColumnEncoderDecoder
+import io.github.mavenrain.async.db.exceptions.DateEncoderNotAvailableException
+import io.github.mavenrain.async.db.util.Log
 import org.joda.time.{Period, ReadablePeriod, ReadableDuration}
 import org.joda.time.format.{ISOPeriodFormat, PeriodFormatterBuilder}
 

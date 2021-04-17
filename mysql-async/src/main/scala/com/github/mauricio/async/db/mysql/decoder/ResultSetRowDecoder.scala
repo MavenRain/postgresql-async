@@ -14,12 +14,12 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.decoder
+package io.github.mavenrain.async.db.mysql.decoder
 
 import java.nio.charset.Charset
 
-import com.github.mauricio.async.db.mysql.message.server.{ResultSetRowMessage, ServerMessage}
-import com.github.mauricio.async.db.util.ChannelWrapper.bufferToWrapper
+import io.github.mavenrain.async.db.mysql.message.server.{ResultSetRowMessage, ServerMessage}
+import io.github.mavenrain.async.db.util.ChannelWrapper.bufferToWrapper
 import io.netty.buffer.ByteBuf
 
 object ResultSetRowDecoder {
@@ -30,7 +30,7 @@ object ResultSetRowDecoder {
 
 class ResultSetRowDecoder(charset: Charset) extends MessageDecoder {
 
-  import com.github.mauricio.async.db.mysql.decoder.ResultSetRowDecoder.NULL
+  import io.github.mavenrain.async.db.mysql.decoder.ResultSetRowDecoder.NULL
 
   def decode(buffer: ByteBuf): ServerMessage = {
     val row = new ResultSetRowMessage()

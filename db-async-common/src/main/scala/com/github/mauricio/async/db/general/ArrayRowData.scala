@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.general
+package io.github.mavenrain.async.db.general
 
-import com.github.mauricio.async.db.RowData
+import io.github.mavenrain.async.db.RowData
 
 class ArrayRowData(row : Int, val mapping : Map[String, Int], val columns : Array[Any]) extends RowData
 {

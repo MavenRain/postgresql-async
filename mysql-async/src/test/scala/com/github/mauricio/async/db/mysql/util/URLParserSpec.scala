@@ -14,12 +14,12 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.util
+package io.github.mavenrain.async.db.mysql.util
 
 import java.nio.charset.Charset
 
-import com.github.mauricio.async.db.{Configuration, SSLConfiguration}
-import com.github.mauricio.async.db.exceptions.UnableToParseURLException
+import io.github.mavenrain.async.db.{Configuration, SSLConfiguration}
+import io.github.mavenrain.async.db.exceptions.UnableToParseURLException
 import io.netty.buffer.{ByteBufAllocator, PooledByteBufAllocator}
 import org.specs2.mutable.Specification
 

@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql
+package io.github.mavenrain.async.db.postgresql
 
-import com.github.mauricio.async.db.postgresql.messages.backend.PostgreSQLColumnData
+import io.github.mavenrain.async.db.postgresql.messages.backend.PostgreSQLColumnData
 
 class PreparedStatementHolder(val query : String, val statementId : Int ) {
 

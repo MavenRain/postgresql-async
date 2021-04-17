@@ -14,12 +14,12 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.examples
+package io.github.mavenrain.async.db.examples
 
-import com.github.mauricio.async.db.postgresql.PostgreSQLConnection
-import com.github.mauricio.async.db.postgresql.util.URLParser
-import com.github.mauricio.async.db.util.ExecutorServiceUtils.CachedExecutionContext
-import com.github.mauricio.async.db.{RowData, QueryResult, Connection}
+import io.github.mavenrain.async.db.postgresql.PostgreSQLConnection
+import io.github.mavenrain.async.db.postgresql.util.URLParser
+import io.github.mavenrain.async.db.util.ExecutorServiceUtils.CachedExecutionContext
+import io.github.mavenrain.async.db.{RowData, QueryResult, Connection}
 import scala.concurrent.duration._
 import scala.concurrent.{Await, Future}
 import scala.language.postfixOps

@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.messages.backend
+package io.github.mavenrain.async.db.postgresql.messages.backend
 
 class NotificationResponse( val backendPid : Int, val channel : String, val payload : String )
   extends ServerMessage(ServerMessage.NotificationResponse)

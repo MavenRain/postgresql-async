@@ -14,13 +14,13 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.column
+package io.github.mavenrain.async.db.postgresql.column
 
-import com.github.mauricio.async.db.column.ColumnEncoderDecoder
-import com.github.mauricio.async.db.exceptions.DateEncoderNotAvailableException
-import com.github.mauricio.async.db.general.ColumnData
-import com.github.mauricio.async.db.postgresql.messages.backend.PostgreSQLColumnData
-import com.github.mauricio.async.db.util.Log
+import io.github.mavenrain.async.db.column.ColumnEncoderDecoder
+import io.github.mavenrain.async.db.exceptions.DateEncoderNotAvailableException
+import io.github.mavenrain.async.db.general.ColumnData
+import io.github.mavenrain.async.db.postgresql.messages.backend.PostgreSQLColumnData
+import io.github.mavenrain.async.db.util.Log
 import io.netty.buffer.ByteBuf
 import java.nio.charset.Charset
 import java.sql.Timestamp

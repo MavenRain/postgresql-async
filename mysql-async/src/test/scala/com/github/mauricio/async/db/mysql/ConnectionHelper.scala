@@ -14,12 +14,12 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql
+package io.github.mavenrain.async.db.mysql
 
-import com.github.mauricio.async.db.util.FutureUtils.awaitFuture
-import com.github.mauricio.async.db._
-import com.github.mauricio.async.db.pool.{PoolConfiguration, ConnectionPool}
-import com.github.mauricio.async.db.mysql.pool.MySQLConnectionFactory
+import io.github.mavenrain.async.db.util.FutureUtils.awaitFuture
+import io.github.mavenrain.async.db._
+import io.github.mavenrain.async.db.pool.{PoolConfiguration, ConnectionPool}
+import io.github.mavenrain.async.db.mysql.pool.MySQLConnectionFactory
 import scala.Some
 
 trait ConnectionHelper {

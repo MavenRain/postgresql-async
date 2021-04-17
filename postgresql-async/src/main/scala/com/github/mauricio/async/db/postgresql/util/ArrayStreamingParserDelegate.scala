@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.util
+package io.github.mavenrain.async.db.postgresql.util
 
 trait ArrayStreamingParserDelegate {
 

@@ -1,7 +1,7 @@
-package com.github.mauricio.async.db.pool
+package io.github.mavenrain.async.db.pool
 
 import scala.concurrent.Future
-import com.github.mauricio.async.db.util.ExecutorServiceUtils
+import io.github.mavenrain.async.db.util.ExecutorServiceUtils
 import scala.concurrent.Promise
 import java.util.concurrent.ConcurrentHashMap
 import scala.util.Success

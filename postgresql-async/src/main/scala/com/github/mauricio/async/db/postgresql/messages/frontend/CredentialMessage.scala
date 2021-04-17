@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.messages.frontend
+package io.github.mavenrain.async.db.postgresql.messages.frontend
 
-import com.github.mauricio.async.db.postgresql.messages.backend.{ServerMessage, AuthenticationResponseType}
+import io.github.mavenrain.async.db.postgresql.messages.backend.{ServerMessage, AuthenticationResponseType}
 
 
 class CredentialMessage(

@@ -14,13 +14,13 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.encoder
+package io.github.mavenrain.async.db.mysql.encoder
 
 import io.netty.buffer.{ByteBuf, Unpooled}
-import com.github.mauricio.async.db.mysql.column.ColumnTypes
-import com.github.mauricio.async.db.mysql.binary.BinaryRowEncoder
-import com.github.mauricio.async.db.mysql.message.client.{PreparedStatementExecuteMessage, ClientMessage}
-import com.github.mauricio.async.db.util.ByteBufferUtils
+import io.github.mavenrain.async.db.mysql.column.ColumnTypes
+import io.github.mavenrain.async.db.mysql.binary.BinaryRowEncoder
+import io.github.mavenrain.async.db.mysql.message.client.{PreparedStatementExecuteMessage, ClientMessage}
+import io.github.mavenrain.async.db.util.ByteBufferUtils
 
 class PreparedStatementExecuteEncoder( rowEncoder : BinaryRowEncoder ) extends MessageEncoder {
 

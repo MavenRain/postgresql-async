@@ -1,8 +1,8 @@
-package com.github.mauricio.async.db.mysql
+package io.github.mavenrain.async.db.mysql
 
 import org.specs2.mutable.Specification
 import scala.concurrent.duration.Duration
-import com.github.mauricio.async.db.RowData
+import io.github.mavenrain.async.db.RowData
 
 class ZeroDatesSpec extends Specification with ConnectionHelper {
 

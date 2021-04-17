@@ -14,11 +14,11 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.pool
+package io.github.mavenrain.async.db.pool
 
 import java.util.concurrent.RejectedExecutionException
 
-import com.github.mauricio.async.db.util.{Log, Worker}
+import io.github.mavenrain.async.db.util.{Log, Worker}
 import java.util.concurrent.atomic.AtomicLong
 import java.util.{Timer, TimerTask}
 
@@ -33,7 +33,7 @@ object SingleThreadedAsyncObjectPool {
 
 /**
  *
- * Implements an [[com.github.mauricio.async.db.pool.AsyncObjectPool]] using a single thread from a
+ * Implements an [[io.github.mavenrain.async.db.pool.AsyncObjectPool]] using a single thread from a
  * fixed executor service as an event loop to cause all calls to be sequential.
  *
  * Once you are done with this object remember to call it's close method to clean up the thread pool and

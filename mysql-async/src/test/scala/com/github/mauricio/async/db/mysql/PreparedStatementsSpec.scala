@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql
+package io.github.mavenrain.async.db.mysql
 
 import java.sql.Timestamp
 import java.util.concurrent.TimeUnit

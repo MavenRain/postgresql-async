@@ -14,15 +14,15 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.pool
+package io.github.mavenrain.async.db.mysql.pool
 
-import com.github.mauricio.async.db.Configuration
-import com.github.mauricio.async.db.pool.ObjectFactory
-import com.github.mauricio.async.db.mysql.MySQLConnection
+import io.github.mavenrain.async.db.Configuration
+import io.github.mavenrain.async.db.pool.ObjectFactory
+import io.github.mavenrain.async.db.mysql.MySQLConnection
 import scala.util.Try
 import scala.concurrent.Await
-import com.github.mauricio.async.db.util.Log
-import com.github.mauricio.async.db.exceptions.{ConnectionTimeoutedException, ConnectionStillRunningQueryException, ConnectionNotConnectedException}
+import io.github.mavenrain.async.db.util.Log
+import io.github.mavenrain.async.db.exceptions.{ConnectionTimeoutedException, ConnectionStillRunningQueryException, ConnectionNotConnectedException}
 
 object MySQLConnectionFactory {
   final val log = Log.get[MySQLConnectionFactory]
@@ -30,7 +30,7 @@ object MySQLConnectionFactory {
 
 /**
  *
- * Connection pool factory for [[com.github.mauricio.async.db.mysql.MySQLConnection]] objects.
+ * Connection pool factory for [[io.github.mavenrain.async.db.mysql.MySQLConnection]] objects.
  *
  * @param configuration a valid configuration to connect to a MySQL server.
  *

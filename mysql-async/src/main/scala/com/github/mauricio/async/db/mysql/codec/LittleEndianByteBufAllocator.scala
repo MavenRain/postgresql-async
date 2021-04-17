@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package com.github.mauricio.async.db.mysql.codec
+package io.github.mavenrain.async.db.mysql.codec
 
 import io.netty.buffer.{CompositeByteBuf, UnpooledByteBufAllocator, ByteBuf, ByteBufAllocator}
 import java.nio.ByteOrder

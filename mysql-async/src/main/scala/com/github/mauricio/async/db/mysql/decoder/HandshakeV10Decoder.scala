@@ -14,14 +14,14 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.decoder
+package io.github.mavenrain.async.db.mysql.decoder
 
 import java.nio.charset.Charset
 
-import com.github.mauricio.async.db.mysql.encoder.auth.AuthenticationMethod
-import com.github.mauricio.async.db.mysql.message.server.{HandshakeMessage, ServerMessage}
-import com.github.mauricio.async.db.util.ChannelWrapper.bufferToWrapper
-import com.github.mauricio.async.db.util.Log
+import io.github.mavenrain.async.db.mysql.encoder.auth.AuthenticationMethod
+import io.github.mavenrain.async.db.mysql.message.server.{HandshakeMessage, ServerMessage}
+import io.github.mavenrain.async.db.util.ChannelWrapper.bufferToWrapper
+import io.github.mavenrain.async.db.util.Log
 import io.netty.buffer.ByteBuf
 import io.netty.util.CharsetUtil
 
@@ -35,8 +35,8 @@ object HandshakeV10Decoder {
 
 class HandshakeV10Decoder(charset: Charset) extends MessageDecoder {
 
-  import com.github.mauricio.async.db.mysql.decoder.HandshakeV10Decoder._
-  import com.github.mauricio.async.db.mysql.util.MySQLIO._
+  import io.github.mavenrain.async.db.mysql.decoder.HandshakeV10Decoder._
+  import io.github.mavenrain.async.db.mysql.util.MySQLIO._
 
   def decode(buffer: ByteBuf): ServerMessage = {
 

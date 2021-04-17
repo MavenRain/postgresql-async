@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.column
+package io.github.mavenrain.async.db.postgresql.column
 
-import com.github.mauricio.async.db.column.ColumnEncoderDecoder
+import io.github.mavenrain.async.db.column.ColumnEncoderDecoder
 
 object SingleByteEncoderDecoder extends ColumnEncoderDecoder {
 

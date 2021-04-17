@@ -14,10 +14,10 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql
+package io.github.mavenrain.async.db.mysql
 
 import java.util.concurrent.TimeoutException
-import com.github.mauricio.async.db.Configuration
+import io.github.mavenrain.async.db.Configuration
 import org.specs2.execute.{AsResult, Success, ResultExecution}
 import org.specs2.mutable.Specification
 import scala.concurrent.Await

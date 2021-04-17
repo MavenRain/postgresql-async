@@ -14,11 +14,11 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.general
+package io.github.mavenrain.async.db.general
 
 import collection.mutable.ArrayBuffer
-import com.github.mauricio.async.db.{RowData, ResultSet}
-import com.github.mauricio.async.db.util.Log
+import io.github.mavenrain.async.db.{RowData, ResultSet}
+import io.github.mavenrain.async.db.util.Log
 
 object MutableResultSet {
   val log = Log.get[MutableResultSet[Nothing]]

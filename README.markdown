@@ -54,14 +54,14 @@ You can view the project's [CHANGELOG here](CHANGELOG.md).
 And if you're in a hurry, you can include them in your build like this, if you're using PostgreSQL:
 
 ```scala
-"com.github.mauricio" %% "postgresql-async" % "0.2.21"
+"io.github.mavenrain" %% "postgresql-async" % "0.2.21"
 ```
 
 Or Maven:
 
 ```xml
 <dependency>
-  <groupId>com.github.mauricio</groupId>
+  <groupId>io.github.mavenrain</groupId>
   <artifactId>postgresql-async_2.11</artifactId>
   <version>0.2.21</version>
 </dependency>
@@ -70,7 +70,7 @@ Or Maven:
 respectively for Scala 2.12:
 ```xml
 <dependency>
-  <groupId>com.github.mauricio</groupId>
+  <groupId>io.github.mavenrain</groupId>
   <artifactId>postgresql-async_2.12</artifactId>
   <version>0.2.21</version>
 </dependency>
@@ -79,14 +79,14 @@ respectively for Scala 2.12:
 And if you're into MySQL:
 
 ```scala
-"com.github.mauricio" %% "mysql-async" % "0.2.21"
+"io.github.mavenrain" %% "mysql-async" % "0.2.21"
 ```
 
 Or Maven:
 
 ```xml
 <dependency>
-  <groupId>com.github.mauricio</groupId>
+  <groupId>io.github.mavenrain</groupId>
   <artifactId>mysql-async_2.11</artifactId>
   <version>0.2.21</version>
 </dependency>
@@ -94,7 +94,7 @@ Or Maven:
 respectively for Scala 2.12:
 ```xml
 <dependency>
-  <groupId>com.github.mauricio</groupId>
+  <groupId>io.github.mavenrain</groupId>
   <artifactId>mysql-async_2.12</artifactId>
   <version>0.2.21</version>
 </dependency>
@@ -242,10 +242,10 @@ it [here](http://mauricio.github.io/2013/04/29/async-database-access-with-postgr
 
 In short, what you would usually do is:
 ```scala
-import com.github.mauricio.async.db.postgresql.PostgreSQLConnection
-import com.github.mauricio.async.db.postgresql.util.URLParser
-import com.github.mauricio.async.db.util.ExecutorServiceUtils.CachedExecutionContext
-import com.github.mauricio.async.db.{RowData, QueryResult, Connection}
+import io.github.mavenrain.async.db.postgresql.PostgreSQLConnection
+import io.github.mavenrain.async.db.postgresql.util.URLParser
+import io.github.mavenrain.async.db.util.ExecutorServiceUtils.CachedExecutionContext
+import io.github.mavenrain.async.db.{RowData, QueryResult, Connection}
 import scala.concurrent.duration._
 import scala.concurrent.{Await, Future}
 

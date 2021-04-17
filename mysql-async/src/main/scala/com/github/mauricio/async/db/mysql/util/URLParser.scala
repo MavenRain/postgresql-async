@@ -13,10 +13,10 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package com.github.mauricio.async.db.mysql.util
+package io.github.mavenrain.async.db.mysql.util
 
-import com.github.mauricio.async.db.util.AbstractURIParser
-import com.github.mauricio.async.db.Configuration
+import io.github.mavenrain.async.db.util.AbstractURIParser
+import io.github.mavenrain.async.db.Configuration
 
 /**
  * The MySQL URL parser.

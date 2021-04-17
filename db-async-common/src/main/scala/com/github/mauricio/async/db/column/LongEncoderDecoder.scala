@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.column
+package io.github.mavenrain.async.db.column
 
 object LongEncoderDecoder extends ColumnEncoderDecoder {
   override def decode(value: String): Long = value.toLong

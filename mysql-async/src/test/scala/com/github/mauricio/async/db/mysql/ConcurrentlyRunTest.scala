@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql
+package io.github.mavenrain.async.db.mysql
 
-import com.github.mauricio.async.db.util.Log
+import io.github.mavenrain.async.db.util.Log
 import java.util.concurrent.atomic.AtomicInteger
 
 /**

@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.column
+package io.github.mavenrain.async.db.postgresql.column
 
 object ColumnTypes {
   final val Untyped = 0

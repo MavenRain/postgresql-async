@@ -14,12 +14,12 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.column
+package io.github.mavenrain.async.db.mysql.column
 
 import io.netty.buffer.ByteBuf
-import com.github.mauricio.async.db.column.ColumnDecoder
+import io.github.mavenrain.async.db.column.ColumnDecoder
 import java.nio.charset.Charset
-import com.github.mauricio.async.db.general.ColumnData
+import io.github.mavenrain.async.db.general.ColumnData
 
 object ByteArrayColumnDecoder extends ColumnDecoder {
 

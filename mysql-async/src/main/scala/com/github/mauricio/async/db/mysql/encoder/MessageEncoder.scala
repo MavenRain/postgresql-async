@@ -14,10 +14,10 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.encoder
+package io.github.mavenrain.async.db.mysql.encoder
 
 import io.netty.buffer.ByteBuf
-import com.github.mauricio.async.db.mysql.message.client.ClientMessage
+import io.github.mavenrain.async.db.mysql.message.client.ClientMessage
 
 trait MessageEncoder {
 

@@ -14,13 +14,13 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.parsers
+package io.github.mavenrain.async.db.postgresql.parsers
 
 import language.implicitConversions
 import java.nio.charset.Charset
 import io.netty.buffer.ByteBuf
-import com.github.mauricio.async.db.postgresql.messages.backend.{NotificationResponse, ServerMessage}
-import com.github.mauricio.async.db.util.ChannelWrapper.bufferToWrapper
+import io.github.mavenrain.async.db.postgresql.messages.backend.{NotificationResponse, ServerMessage}
+import io.github.mavenrain.async.db.util.ChannelWrapper.bufferToWrapper
 
 class NotificationResponseParser( charset : Charset ) extends MessageParser {
 

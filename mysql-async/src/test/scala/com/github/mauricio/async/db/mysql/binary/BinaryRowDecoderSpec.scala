@@ -14,15 +14,15 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.binary
+package io.github.mavenrain.async.db.mysql.binary
 
 import io.netty.buffer.Unpooled
 import io.netty.util.CharsetUtil
-import com.github.mauricio.async.db.mysql.column.ColumnTypes
-import com.github.mauricio.async.db.mysql.message.server.ColumnDefinitionMessage
+import io.github.mavenrain.async.db.mysql.column.ColumnTypes
+import io.github.mavenrain.async.db.mysql.message.server.ColumnDefinitionMessage
 import org.specs2.mutable.Specification
 import java.nio.ByteOrder
-import com.github.mauricio.async.db.mysql.codec.DecoderRegistry
+import io.github.mavenrain.async.db.mysql.codec.DecoderRegistry
 
 class BinaryRowDecoderSpec extends Specification {
 

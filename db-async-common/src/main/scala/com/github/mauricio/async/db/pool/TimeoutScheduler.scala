@@ -1,4 +1,4 @@
-package com.github.mauricio.async.db.pool
+package io.github.mavenrain.async.db.pool
 
 import java.util.concurrent.atomic.AtomicBoolean
 import java.util.concurrent.{TimeUnit, TimeoutException, ScheduledFuture}

@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql
+package io.github.mavenrain.async.db.postgresql
 
-import com.github.mauricio.async.db.column.{TimestampWithTimezoneEncoderDecoder, InetAddressEncoderDecoder}
+import io.github.mavenrain.async.db.column.{TimestampWithTimezoneEncoderDecoder, InetAddressEncoderDecoder}
 import org.specs2.mutable.Specification
 import java.net.InetAddress
 

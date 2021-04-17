@@ -1,7 +1,7 @@
-package com.github.mauricio.async.db.mysql.codec
+package io.github.mavenrain.async.db.mysql.codec
 
-import com.github.mauricio.async.db.mysql.message.client.{ClientMessage, SendLongDataMessage}
-import com.github.mauricio.async.db.util.{ByteBufferUtils, Log}
+import io.github.mavenrain.async.db.mysql.message.client.{ClientMessage, SendLongDataMessage}
+import io.github.mavenrain.async.db.util.{ByteBufferUtils, Log}
 import io.netty.buffer.Unpooled
 import io.netty.channel.ChannelHandlerContext
 import io.netty.handler.codec.MessageToMessageEncoder
@@ -15,7 +15,7 @@ object SendLongDataEncoder {
 class SendLongDataEncoder
     extends MessageToMessageEncoder[SendLongDataMessage](classOf[SendLongDataMessage]) {
 
-  import com.github.mauricio.async.db.mysql.codec.SendLongDataEncoder.log
+  import io.github.mavenrain.async.db.mysql.codec.SendLongDataEncoder.log
 
   def encode(ctx: ChannelHandlerContext, message: SendLongDataMessage, out: java.util.List[Object]): Unit = {
     if ( log.isTraceEnabled ) {

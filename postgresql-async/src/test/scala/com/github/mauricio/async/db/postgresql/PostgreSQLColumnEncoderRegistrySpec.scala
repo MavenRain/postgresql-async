@@ -1,6 +1,6 @@
-package com.github.mauricio.async.db.postgresql
+package io.github.mavenrain.async.db.postgresql
 
-import com.github.mauricio.async.db.postgresql.column.PostgreSQLColumnEncoderRegistry
+import io.github.mavenrain.async.db.postgresql.column.PostgreSQLColumnEncoderRegistry
 import org.specs2.mutable.Specification
 
 class PostgreSQLColumnEncoderRegistrySpec extends Specification {

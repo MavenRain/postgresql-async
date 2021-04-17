@@ -14,6 +14,6 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.messages.backend
+package io.github.mavenrain.async.db.postgresql.messages.backend
 
 object NoData extends ServerMessage( ServerMessage.NoData )

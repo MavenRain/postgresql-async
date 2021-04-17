@@ -14,13 +14,13 @@
  * under the License.
  */
 
-package com.github.mauricio.postgresql
+package io.github.mavenrain.postgresql
 
-import com.github.mauricio.async.db.postgresql.codec.MessageDecoder
-import com.github.mauricio.async.db.postgresql.exceptions.{MessageTooLongException}
-import com.github.mauricio.async.db.postgresql.messages.backend.{ServerMessage, ErrorMessage}
+import io.github.mavenrain.async.db.postgresql.codec.MessageDecoder
+import io.github.mavenrain.async.db.postgresql.exceptions.{MessageTooLongException}
+import io.github.mavenrain.async.db.postgresql.messages.backend.{ServerMessage, ErrorMessage}
 import org.specs2.mutable.Specification
-import com.github.mauricio.async.db.exceptions.NegativeMessageSizeException
+import io.github.mavenrain.async.db.exceptions.NegativeMessageSizeException
 import io.netty.util.CharsetUtil
 import io.netty.buffer.Unpooled
 import java.util

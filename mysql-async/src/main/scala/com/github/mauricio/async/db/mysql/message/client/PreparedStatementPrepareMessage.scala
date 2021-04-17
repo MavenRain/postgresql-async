@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.message.client
+package io.github.mavenrain.async.db.mysql.message.client
 
 case class PreparedStatementPrepareMessage( statement : String )
   extends ClientMessage( ClientMessage.PreparedStatementPrepare )

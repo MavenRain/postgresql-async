@@ -14,12 +14,12 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.encoders
+package io.github.mavenrain.async.db.postgresql.encoders
 
-import com.github.mauricio.async.db.postgresql.messages.backend.{ServerMessage, AuthenticationResponseType}
-import com.github.mauricio.async.db.postgresql.messages.frontend.{CredentialMessage, ClientMessage}
-import com.github.mauricio.async.db.postgresql.util.PasswordHelper
-import com.github.mauricio.async.db.util.ByteBufferUtils
+import io.github.mavenrain.async.db.postgresql.messages.backend.{ServerMessage, AuthenticationResponseType}
+import io.github.mavenrain.async.db.postgresql.messages.frontend.{CredentialMessage, ClientMessage}
+import io.github.mavenrain.async.db.postgresql.util.PasswordHelper
+import io.github.mavenrain.async.db.util.ByteBufferUtils
 import java.nio.charset.Charset
 import io.netty.buffer.{Unpooled, ByteBuf}
 

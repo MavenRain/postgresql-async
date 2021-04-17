@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.general
+package io.github.mavenrain.async.db.general
 
 trait ColumnData {
 

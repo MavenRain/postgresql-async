@@ -14,13 +14,13 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.binary
+package io.github.mavenrain.async.db.mysql.binary
 
 import java.nio.ByteBuffer
 import java.nio.charset.Charset
 
-import com.github.mauricio.async.db.mysql.binary.encoder._
-import com.github.mauricio.async.db.util._
+import io.github.mavenrain.async.db.mysql.binary.encoder._
+import io.github.mavenrain.async.db.util._
 import io.netty.buffer.ByteBuf
 import org.joda.time._
 

@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package com.github.mauricio.async.db.postgresql
+package io.github.mavenrain.async.db.postgresql
 
 /**
  * Contains package level aliases and type renames.
@@ -23,7 +23,7 @@ package object util {
   /**
    * Alias to help compatibility.
    */
-  @deprecated("Use com.github.mauricio.async.db.postgresql.util.URLParser", since = "0.2.20")
+  @deprecated("Use io.github.mavenrain.async.db.postgresql.util.URLParser", since = "0.2.20")
   val ParserURL = URLParser
 
 }

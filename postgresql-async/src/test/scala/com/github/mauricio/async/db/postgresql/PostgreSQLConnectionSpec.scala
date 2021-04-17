@@ -14,16 +14,16 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql
+package io.github.mavenrain.async.db.postgresql
 
 import java.nio.ByteBuffer
 
-import com.github.mauricio.async.db.column.{DateEncoderDecoder, TimeEncoderDecoder, TimestampEncoderDecoder}
-import com.github.mauricio.async.db.exceptions.UnsupportedAuthenticationMethodException
-import com.github.mauricio.async.db.postgresql.exceptions.{GenericDatabaseException, QueryMustNotBeNullOrEmptyException}
-import com.github.mauricio.async.db.postgresql.messages.backend.InformationMessage
-import com.github.mauricio.async.db.util.Log
-import com.github.mauricio.async.db.{Configuration, Connection, QueryResult}
+import io.github.mavenrain.async.db.column.{DateEncoderDecoder, TimeEncoderDecoder, TimestampEncoderDecoder}
+import io.github.mavenrain.async.db.exceptions.UnsupportedAuthenticationMethodException
+import io.github.mavenrain.async.db.postgresql.exceptions.{GenericDatabaseException, QueryMustNotBeNullOrEmptyException}
+import io.github.mavenrain.async.db.postgresql.messages.backend.InformationMessage
+import io.github.mavenrain.async.db.util.Log
+import io.github.mavenrain.async.db.{Configuration, Connection, QueryResult}
 import io.netty.buffer.Unpooled
 import org.joda.time.LocalDateTime
 import org.specs2.mutable.Specification

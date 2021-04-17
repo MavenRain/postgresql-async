@@ -14,11 +14,11 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.decoder
+package io.github.mavenrain.async.db.mysql.decoder
 
 import io.netty.buffer.ByteBuf
-import com.github.mauricio.async.db.mysql.message.server.{ErrorMessage, ServerMessage}
-import com.github.mauricio.async.db.util.ChannelWrapper.bufferToWrapper
+import io.github.mavenrain.async.db.mysql.message.server.{ErrorMessage, ServerMessage}
+import io.github.mavenrain.async.db.util.ChannelWrapper.bufferToWrapper
 import java.nio.charset.Charset
 import scala.language.implicitConversions
 

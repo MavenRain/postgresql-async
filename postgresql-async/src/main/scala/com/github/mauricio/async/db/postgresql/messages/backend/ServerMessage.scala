@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.messages.backend
+package io.github.mavenrain.async.db.postgresql.messages.backend
 
-import com.github.mauricio.async.db.KindedMessage
+import io.github.mavenrain.async.db.KindedMessage
 
 object ServerMessage {
   final val Authentication = 'R'

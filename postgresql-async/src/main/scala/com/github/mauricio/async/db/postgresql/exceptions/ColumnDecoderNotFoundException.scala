@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.exceptions
+package io.github.mavenrain.async.db.postgresql.exceptions
 
 class ColumnDecoderNotFoundException(kind: Int)
   extends IllegalArgumentException("There is no decoder available for kind %s".format(kind))

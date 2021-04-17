@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.column
+package io.github.mavenrain.async.db.column
 
-import com.github.mauricio.async.db.exceptions.DateEncoderNotAvailableException
+import io.github.mavenrain.async.db.exceptions.DateEncoderNotAvailableException
 import java.sql.Timestamp
 import java.util.{Calendar, Date}
 import org.joda.time._

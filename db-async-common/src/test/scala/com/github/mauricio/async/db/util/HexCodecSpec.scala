@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.util
+package io.github.mavenrain.async.db.util
 
 import org.specs2.mutable.Specification
 

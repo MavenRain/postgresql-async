@@ -1,6 +1,6 @@
-package com.github.mauricio.async.db.pool
+package io.github.mavenrain.async.db.pool
 
-import com.github.mauricio.async.db.pool.AbstractAsyncObjectPoolSpec.Widget
+import io.github.mavenrain.async.db.pool.AbstractAsyncObjectPoolSpec.Widget
 import org.mockito.Mockito.reset
 import org.specs2.mock.Mockito
 import org.specs2.mutable.Specification

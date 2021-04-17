@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.codec
+package io.github.mavenrain.async.db.mysql.codec
 
-import com.github.mauricio.async.db.mysql.message.server.{ColumnDefinitionMessage, PreparedStatementPrepareResponse}
+import io.github.mavenrain.async.db.mysql.message.server.{ColumnDefinitionMessage, PreparedStatementPrepareResponse}
 import scala.collection.mutable.ArrayBuffer
 
 class PreparedStatementHolder( val statement : String, val message : PreparedStatementPrepareResponse ) {

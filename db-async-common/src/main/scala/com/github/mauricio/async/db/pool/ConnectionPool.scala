@@ -14,16 +14,16 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.pool
+package io.github.mavenrain.async.db.pool
 
-import com.github.mauricio.async.db.util.ExecutorServiceUtils
-import com.github.mauricio.async.db.{QueryResult, Connection}
+import io.github.mavenrain.async.db.util.ExecutorServiceUtils
+import io.github.mavenrain.async.db.{QueryResult, Connection}
 import scala.concurrent.{ExecutionContext, Future}
 
 /**
  *
  * Pool specialized in database connections that also simplifies connection handling by
- * implementing the [[com.github.mauricio.async.db.Connection]] trait and saving clients from having to implement
+ * implementing the [[io.github.mavenrain.async.db.Connection]] trait and saving clients from having to implement
  * the "give back" part of pool management. This lets you do your job without having to worry
  * about managing and giving back connection objects to the pool.
  *

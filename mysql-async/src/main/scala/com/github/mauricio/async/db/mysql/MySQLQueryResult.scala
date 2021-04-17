@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql
+package io.github.mavenrain.async.db.mysql
 
-import com.github.mauricio.async.db.{ResultSet, QueryResult}
+import io.github.mavenrain.async.db.{ResultSet, QueryResult}
 
 class MySQLQueryResult(
   rowsAffected: Long,

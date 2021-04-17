@@ -14,13 +14,13 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.column
+package io.github.mavenrain.async.db.postgresql.column
 
-import com.github.mauricio.async.db.column.ColumnDecoder
-import com.github.mauricio.async.db.postgresql.util.{ArrayStreamingParserDelegate, ArrayStreamingParser}
+import io.github.mavenrain.async.db.column.ColumnDecoder
+import io.github.mavenrain.async.db.postgresql.util.{ArrayStreamingParserDelegate, ArrayStreamingParser}
 import scala.collection.IndexedSeq
 import scala.collection.mutable.ArrayBuffer
-import com.github.mauricio.async.db.general.ColumnData
+import io.github.mavenrain.async.db.general.ColumnData
 import io.netty.buffer.{Unpooled, ByteBuf}
 import java.nio.charset.Charset
 

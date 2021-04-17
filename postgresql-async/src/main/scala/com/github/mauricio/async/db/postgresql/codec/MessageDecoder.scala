@@ -14,14 +14,14 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.codec
+package io.github.mavenrain.async.db.postgresql.codec
 
-import com.github.mauricio.async.db.postgresql.exceptions.{MessageTooLongException}
-import com.github.mauricio.async.db.postgresql.messages.backend.{ServerMessage, SSLResponseMessage}
-import com.github.mauricio.async.db.postgresql.parsers.{AuthenticationStartupParser, MessageParsersRegistry}
-import com.github.mauricio.async.db.util.{BufferDumper, Log}
+import io.github.mavenrain.async.db.postgresql.exceptions.{MessageTooLongException}
+import io.github.mavenrain.async.db.postgresql.messages.backend.{ServerMessage, SSLResponseMessage}
+import io.github.mavenrain.async.db.postgresql.parsers.{AuthenticationStartupParser, MessageParsersRegistry}
+import io.github.mavenrain.async.db.util.{BufferDumper, Log}
 import java.nio.charset.Charset
-import com.github.mauricio.async.db.exceptions.NegativeMessageSizeException
+import io.github.mavenrain.async.db.exceptions.NegativeMessageSizeException
 import io.netty.handler.codec.ByteToMessageDecoder
 import io.netty.channel.ChannelHandlerContext
 import io.netty.buffer.ByteBuf

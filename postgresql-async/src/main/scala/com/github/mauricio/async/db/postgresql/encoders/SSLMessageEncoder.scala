@@ -1,4 +1,4 @@
-package com.github.mauricio.async.db.postgresql.encoders
+package io.github.mavenrain.async.db.postgresql.encoders
 
 import io.netty.buffer.ByteBuf
 import io.netty.buffer.Unpooled

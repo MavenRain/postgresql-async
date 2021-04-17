@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.binary.decoder
+package io.github.mavenrain.async.db.mysql.binary.decoder
 
 import io.netty.buffer.ByteBuf
 import org.joda.time.LocalDateTime

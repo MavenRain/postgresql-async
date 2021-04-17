@@ -14,21 +14,21 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.pool
+package io.github.mavenrain.async.db.postgresql.pool
 
-import com.github.mauricio.async.db.Configuration
-import com.github.mauricio.async.db.exceptions.ConnectionTimeoutedException
-import com.github.mauricio.async.db.pool.ObjectFactory
-import com.github.mauricio.async.db.postgresql.PostgreSQLConnection
-import com.github.mauricio.async.db.util.Log
+import io.github.mavenrain.async.db.Configuration
+import io.github.mavenrain.async.db.exceptions.ConnectionTimeoutedException
+import io.github.mavenrain.async.db.pool.ObjectFactory
+import io.github.mavenrain.async.db.postgresql.PostgreSQLConnection
+import io.github.mavenrain.async.db.util.Log
 import java.nio.channels.ClosedChannelException
 import scala.concurrent.Await
 import scala.concurrent.duration._
 import scala.language.postfixOps
 import scala.util.{Success, Failure, Try}
 import scala.concurrent.ExecutionContext
-import com.github.mauricio.async.db.util.ExecutorServiceUtils
-import com.github.mauricio.async.db.util.NettyUtils
+import io.github.mavenrain.async.db.util.ExecutorServiceUtils
+import io.github.mavenrain.async.db.util.NettyUtils
 import io.netty.channel.EventLoopGroup
 
 object PostgreSQLConnectionFactory {

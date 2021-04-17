@@ -1,4 +1,4 @@
-package com.github.mauricio.async.db.pool
+package io.github.mavenrain.async.db.pool
 
 import java.util.concurrent.atomic.AtomicInteger
 
@@ -9,7 +9,7 @@ import scala.concurrent.duration._
 import scala.concurrent.Future
 import org.specs2.mutable.SpecificationWithJUnit
 import language.reflectiveCalls
-import com.github.mauricio.async.db.util.ExecutorServiceUtils
+import io.github.mavenrain.async.db.util.ExecutorServiceUtils
 import scala.concurrent.ExecutionContext
 import java.util.concurrent.Executors
 

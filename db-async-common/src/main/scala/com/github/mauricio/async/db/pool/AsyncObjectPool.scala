@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.pool
+package io.github.mavenrain.async.db.pool
 
 import scala.concurrent.{ExecutionContext, Future, Promise}
 
@@ -33,7 +33,7 @@ trait AsyncObjectPool[T] {
    *
    * Returns an object from the pool to the callee with the returned future. If the pool can not create or enqueue
    * requests it will fill the returned [[scala.concurrent.Future]] with an
-   * [[com.github.mauricio.async.db.pool.PoolExhaustedException]].
+   * [[io.github.mavenrain.async.db.pool.PoolExhaustedException]].
    *
    * @return future that will eventually return a usable pool object.
    */
@@ -55,7 +55,7 @@ trait AsyncObjectPool[T] {
   /**
    *
    * Closes this pool and future calls to **take** will cause the [[scala.concurrent.Future]] to raise an
-   * [[com.github.mauricio.async.db.pool.PoolAlreadyTerminatedException]].
+   * [[io.github.mavenrain.async.db.pool.PoolAlreadyTerminatedException]].
    *
    * @return
    */

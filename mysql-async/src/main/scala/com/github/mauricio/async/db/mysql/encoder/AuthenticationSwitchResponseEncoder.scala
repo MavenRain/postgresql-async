@@ -1,11 +1,11 @@
-package com.github.mauricio.async.db.mysql.encoder
+package io.github.mavenrain.async.db.mysql.encoder
 
-import com.github.mauricio.async.db.mysql.message.client.{AuthenticationSwitchResponse, ClientMessage}
+import io.github.mavenrain.async.db.mysql.message.client.{AuthenticationSwitchResponse, ClientMessage}
 import io.netty.buffer.ByteBuf
-import com.github.mauricio.async.db.exceptions.UnsupportedAuthenticationMethodException
-import com.github.mauricio.async.db.mysql.encoder.auth.AuthenticationMethod
+import io.github.mavenrain.async.db.exceptions.UnsupportedAuthenticationMethodException
+import io.github.mavenrain.async.db.mysql.encoder.auth.AuthenticationMethod
 import java.nio.charset.Charset
-import com.github.mauricio.async.db.util.ByteBufferUtils
+import io.github.mavenrain.async.db.util.ByteBufferUtils
 
 class AuthenticationSwitchResponseEncoder( charset : Charset ) extends MessageEncoder {
 

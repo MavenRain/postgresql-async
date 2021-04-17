@@ -13,10 +13,10 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.util
+package io.github.mavenrain.async.db.postgresql.util
 
-import com.github.mauricio.async.db.postgresql.exceptions.InvalidArrayException
-import com.github.mauricio.async.db.util.Log
+import io.github.mavenrain.async.db.postgresql.exceptions.InvalidArrayException
+import io.github.mavenrain.async.db.util.Log
 import scala.collection.mutable
 import scala.collection.mutable.StringBuilder
 

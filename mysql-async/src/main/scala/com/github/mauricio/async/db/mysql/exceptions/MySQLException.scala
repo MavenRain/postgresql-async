@@ -14,10 +14,10 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.exceptions
+package io.github.mavenrain.async.db.mysql.exceptions
 
-import com.github.mauricio.async.db.exceptions.DatabaseException
-import com.github.mauricio.async.db.mysql.message.server.ErrorMessage
+import io.github.mavenrain.async.db.exceptions.DatabaseException
+import io.github.mavenrain.async.db.mysql.message.server.ErrorMessage
 
 class MySQLException( val errorMessage : ErrorMessage )
   extends DatabaseException("Error %d - %s - %s".format(errorMessage.errorCode, errorMessage.sqlState, errorMessage.errorMessage))

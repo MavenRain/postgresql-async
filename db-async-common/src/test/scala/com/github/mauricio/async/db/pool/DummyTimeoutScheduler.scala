@@ -14,10 +14,10 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.pool
+package io.github.mavenrain.async.db.pool
 
 import java.util.concurrent.atomic.AtomicInteger
-import com.github.mauricio.async.db.util.{NettyUtils, ExecutorServiceUtils}
+import io.github.mavenrain.async.db.util.{NettyUtils, ExecutorServiceUtils}
 import io.netty.channel.EventLoopGroup
 
 /**

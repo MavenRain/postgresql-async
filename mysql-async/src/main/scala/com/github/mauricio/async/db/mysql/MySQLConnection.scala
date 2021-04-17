@@ -14,20 +14,20 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql
+package io.github.mavenrain.async.db.mysql
 
 import java.util.concurrent.atomic.{AtomicLong, AtomicReference}
 
-import com.github.mauricio.async.db._
-import com.github.mauricio.async.db.exceptions._
-import com.github.mauricio.async.db.mysql.codec.{MySQLConnectionHandler, MySQLHandlerDelegate}
-import com.github.mauricio.async.db.mysql.exceptions.MySQLException
-import com.github.mauricio.async.db.mysql.message.client._
-import com.github.mauricio.async.db.mysql.message.server._
-import com.github.mauricio.async.db.mysql.util.CharsetMapper
-import com.github.mauricio.async.db.pool.TimeoutScheduler
-import com.github.mauricio.async.db.util.ChannelFutureTransformer.toFuture
-import com.github.mauricio.async.db.util._
+import io.github.mavenrain.async.db._
+import io.github.mavenrain.async.db.exceptions._
+import io.github.mavenrain.async.db.mysql.codec.{MySQLConnectionHandler, MySQLHandlerDelegate}
+import io.github.mavenrain.async.db.mysql.exceptions.MySQLException
+import io.github.mavenrain.async.db.mysql.message.client._
+import io.github.mavenrain.async.db.mysql.message.server._
+import io.github.mavenrain.async.db.mysql.util.CharsetMapper
+import io.github.mavenrain.async.db.pool.TimeoutScheduler
+import io.github.mavenrain.async.db.util.ChannelFutureTransformer.toFuture
+import io.github.mavenrain.async.db.util._
 import io.netty.channel.{ChannelHandlerContext, EventLoopGroup}
 
 import scala.concurrent.{ExecutionContext, Future, Promise}

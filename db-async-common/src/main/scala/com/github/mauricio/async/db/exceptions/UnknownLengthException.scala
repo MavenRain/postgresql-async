@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.exceptions
+package io.github.mavenrain.async.db.exceptions
 
 class UnknownLengthException ( length : Int )
   extends DatabaseException( "Can't handle the length %d".format(length) )

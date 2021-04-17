@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.postgresql
+package io.github.mavenrain.postgresql
 
 import java.util.concurrent.atomic.AtomicInteger
 

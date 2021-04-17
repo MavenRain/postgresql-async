@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db
+package io.github.mavenrain.async.db
 
 import concurrent.Future
 

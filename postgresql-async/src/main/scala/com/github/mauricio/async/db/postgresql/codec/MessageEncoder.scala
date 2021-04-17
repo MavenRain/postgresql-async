@@ -14,14 +14,14 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.codec
+package io.github.mavenrain.async.db.postgresql.codec
 
-import com.github.mauricio.async.db.column.ColumnEncoderRegistry
-import com.github.mauricio.async.db.exceptions.EncoderNotAvailableException
-import com.github.mauricio.async.db.postgresql.encoders._
-import com.github.mauricio.async.db.postgresql.messages.backend.ServerMessage
-import com.github.mauricio.async.db.postgresql.messages.frontend._
-import com.github.mauricio.async.db.util.{BufferDumper, Log}
+import io.github.mavenrain.async.db.column.ColumnEncoderRegistry
+import io.github.mavenrain.async.db.exceptions.EncoderNotAvailableException
+import io.github.mavenrain.async.db.postgresql.encoders._
+import io.github.mavenrain.async.db.postgresql.messages.backend.ServerMessage
+import io.github.mavenrain.async.db.postgresql.messages.frontend._
+import io.github.mavenrain.async.db.util.{BufferDumper, Log}
 import java.nio.charset.Charset
 import scala.annotation.switch
 import io.netty.handler.codec.MessageToMessageEncoder

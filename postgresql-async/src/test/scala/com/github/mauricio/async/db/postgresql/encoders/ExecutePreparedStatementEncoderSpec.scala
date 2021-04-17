@@ -1,7 +1,7 @@
-package com.github.mauricio.async.db.postgresql.encoders
+package io.github.mavenrain.async.db.postgresql.encoders
 
-import com.github.mauricio.async.db.postgresql.column.PostgreSQLColumnEncoderRegistry
-import com.github.mauricio.async.db.postgresql.messages.frontend.PreparedStatementExecuteMessage
+import io.github.mavenrain.async.db.postgresql.column.PostgreSQLColumnEncoderRegistry
+import io.github.mavenrain.async.db.postgresql.messages.frontend.PreparedStatementExecuteMessage
 import io.netty.util.CharsetUtil
 import org.specs2.mutable.Specification
 

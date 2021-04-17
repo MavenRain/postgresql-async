@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.codec
+package io.github.mavenrain.async.db.postgresql.codec
 
-import com.github.mauricio.async.db.postgresql.messages.backend._
+import io.github.mavenrain.async.db.postgresql.messages.backend._
 
 trait PostgreSQLConnectionDelegate {
 

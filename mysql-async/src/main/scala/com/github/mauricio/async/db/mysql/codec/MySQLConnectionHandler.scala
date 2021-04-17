@@ -14,21 +14,21 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.codec
+package io.github.mavenrain.async.db.mysql.codec
 
 import java.net.InetSocketAddress
 import java.nio.ByteBuffer
 import java.util.concurrent.TimeUnit
 
-import com.github.mauricio.async.db.Configuration
-import com.github.mauricio.async.db.exceptions.DatabaseException
-import com.github.mauricio.async.db.general.MutableResultSet
-import com.github.mauricio.async.db.mysql.binary.BinaryRowDecoder
-import com.github.mauricio.async.db.mysql.message.client._
-import com.github.mauricio.async.db.mysql.message.server._
-import com.github.mauricio.async.db.mysql.util.CharsetMapper
-import com.github.mauricio.async.db.util.ChannelFutureTransformer.toFuture
-import com.github.mauricio.async.db.util._
+import io.github.mavenrain.async.db.Configuration
+import io.github.mavenrain.async.db.exceptions.DatabaseException
+import io.github.mavenrain.async.db.general.MutableResultSet
+import io.github.mavenrain.async.db.mysql.binary.BinaryRowDecoder
+import io.github.mavenrain.async.db.mysql.message.client._
+import io.github.mavenrain.async.db.mysql.message.server._
+import io.github.mavenrain.async.db.mysql.util.CharsetMapper
+import io.github.mavenrain.async.db.util.ChannelFutureTransformer.toFuture
+import io.github.mavenrain.async.db.util._
 import io.netty.bootstrap.Bootstrap
 import io.netty.buffer.{ByteBuf, ByteBufAllocator, Unpooled}
 import io.netty.channel._

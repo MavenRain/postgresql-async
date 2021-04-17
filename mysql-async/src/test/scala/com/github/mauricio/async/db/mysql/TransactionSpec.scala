@@ -1,12 +1,12 @@
-package com.github.mauricio.async.db.mysql
+package io.github.mavenrain.async.db.mysql
 
 import java.util.UUID
 import java.util.concurrent.TimeUnit
 
 import org.specs2.mutable.Specification
-import com.github.mauricio.async.db.util.FutureUtils.awaitFuture
-import com.github.mauricio.async.db.mysql.exceptions.MySQLException
-import com.github.mauricio.async.db.Connection
+import io.github.mavenrain.async.db.util.FutureUtils.awaitFuture
+import io.github.mavenrain.async.db.mysql.exceptions.MySQLException
+import io.github.mavenrain.async.db.Connection
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}

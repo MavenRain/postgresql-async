@@ -14,13 +14,13 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.pool
+package io.github.mavenrain.async.db.postgresql.pool
 
 import java.util.UUID
 
-import com.github.mauricio.async.db.pool.{ConnectionPool, PoolConfiguration}
-import com.github.mauricio.async.db.postgresql.exceptions.GenericDatabaseException
-import com.github.mauricio.async.db.postgresql.{PostgreSQLConnection, DatabaseTestHelper}
+import io.github.mavenrain.async.db.pool.{ConnectionPool, PoolConfiguration}
+import io.github.mavenrain.async.db.postgresql.exceptions.GenericDatabaseException
+import io.github.mavenrain.async.db.postgresql.{PostgreSQLConnection, DatabaseTestHelper}
 import org.specs2.mutable.Specification
 import scala.concurrent.ExecutionContext.Implicits.global
 

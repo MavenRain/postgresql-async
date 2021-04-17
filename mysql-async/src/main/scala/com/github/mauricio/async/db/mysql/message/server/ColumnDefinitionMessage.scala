@@ -14,13 +14,13 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.message.server
+package io.github.mavenrain.async.db.mysql.message.server
 
-import com.github.mauricio.async.db.mysql.column.ColumnTypes
-import com.github.mauricio.async.db.mysql.util.CharsetMapper
-import com.github.mauricio.async.db.general.ColumnData
-import com.github.mauricio.async.db.mysql.binary.decoder.BinaryDecoder
-import com.github.mauricio.async.db.column.ColumnDecoder
+import io.github.mavenrain.async.db.mysql.column.ColumnTypes
+import io.github.mavenrain.async.db.mysql.util.CharsetMapper
+import io.github.mavenrain.async.db.general.ColumnData
+import io.github.mavenrain.async.db.mysql.binary.decoder.BinaryDecoder
+import io.github.mavenrain.async.db.column.ColumnDecoder
 
 case class ColumnDefinitionMessage(
                                     catalog: String,

@@ -14,18 +14,18 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.codec
+package io.github.mavenrain.async.db.mysql.codec
 
-import com.github.mauricio.async.db.mysql.binary.decoder._
+import io.github.mavenrain.async.db.mysql.binary.decoder._
 import scala.annotation.switch
-import com.github.mauricio.async.db.mysql.column._
-import com.github.mauricio.async.db.mysql.util.CharsetMapper
+import io.github.mavenrain.async.db.mysql.column._
+import io.github.mavenrain.async.db.mysql.util.CharsetMapper
 import java.nio.charset.Charset
-import com.github.mauricio.async.db.column._
-import com.github.mauricio.async.db.column.{ByteDecoder => TextByteDecoder}
-import com.github.mauricio.async.db.mysql.binary.decoder.ByteDecoder
-import com.github.mauricio.async.db.mysql.binary.decoder.TimeDecoder
-import com.github.mauricio.async.db.mysql.column.{TimeDecoder => TextTimeDecoder}
+import io.github.mavenrain.async.db.column._
+import io.github.mavenrain.async.db.column.{ByteDecoder => TextByteDecoder}
+import io.github.mavenrain.async.db.mysql.binary.decoder.ByteDecoder
+import io.github.mavenrain.async.db.mysql.binary.decoder.TimeDecoder
+import io.github.mavenrain.async.db.mysql.column.{TimeDecoder => TextTimeDecoder}
 
 class DecoderRegistry(charset: Charset) {
 

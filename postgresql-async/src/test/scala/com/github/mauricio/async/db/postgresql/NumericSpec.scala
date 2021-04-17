@@ -1,4 +1,4 @@
-package com.github.mauricio.async.db.postgresql
+package io.github.mavenrain.async.db.postgresql
 
 import org.specs2.mutable.Specification
 

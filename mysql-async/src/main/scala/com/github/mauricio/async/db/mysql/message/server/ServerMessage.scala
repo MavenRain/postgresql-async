@@ -15,9 +15,9 @@
  *
  */
 
-package com.github.mauricio.async.db.mysql.message.server
+package io.github.mavenrain.async.db.mysql.message.server
 
-import com.github.mauricio.async.db.KindedMessage
+import io.github.mavenrain.async.db.KindedMessage
 
 object ServerMessage {
 

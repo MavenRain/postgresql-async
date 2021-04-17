@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.exceptions
+package io.github.mavenrain.async.db.exceptions
 
-import com.github.mauricio.async.db.KindedMessage
+import io.github.mavenrain.async.db.KindedMessage
 
 class EncoderNotAvailableException(message: KindedMessage)
   extends DatabaseException("Encoder not available for name %s".format(message.kind))

@@ -14,11 +14,11 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.util
+package io.github.mavenrain.async.db.util
 
 import io.netty.channel.{ChannelFutureListener, ChannelFuture}
 import scala.concurrent.{Promise, Future}
-import com.github.mauricio.async.db.exceptions.CanceledChannelFutureException
+import io.github.mavenrain.async.db.exceptions.CanceledChannelFutureException
 import scala.language.implicitConversions
 
 object ChannelFutureTransformer {

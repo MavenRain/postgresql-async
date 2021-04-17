@@ -14,10 +14,10 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.exceptions
+package io.github.mavenrain.async.db.postgresql.exceptions
 
-import com.github.mauricio.async.db.exceptions.DatabaseException
-import com.github.mauricio.async.db.postgresql.messages.backend.ErrorMessage
+import io.github.mavenrain.async.db.exceptions.DatabaseException
+import io.github.mavenrain.async.db.postgresql.messages.backend.ErrorMessage
 
 class GenericDatabaseException(val errorMessage: ErrorMessage)
   extends DatabaseException(errorMessage.toString)

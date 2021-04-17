@@ -14,9 +14,9 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.encoder
+package io.github.mavenrain.async.db.mysql.encoder
 
-import com.github.mauricio.async.db.mysql.binary.BinaryRowEncoder
+import io.github.mavenrain.async.db.mysql.binary.BinaryRowEncoder
 import io.netty.util.CharsetUtil
 import org.specs2.mutable.Specification
 

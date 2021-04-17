@@ -14,11 +14,11 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.mysql.binary.encoder
+package io.github.mavenrain.async.db.mysql.binary.encoder
 
 import io.netty.buffer.ByteBuf
 import org.joda.time.LocalTime
-import com.github.mauricio.async.db.mysql.column.ColumnTypes
+import io.github.mavenrain.async.db.mysql.column.ColumnTypes
 
 object LocalTimeEncoder extends BinaryEncoder {
   def encode(value: Any, buffer: ByteBuf) {

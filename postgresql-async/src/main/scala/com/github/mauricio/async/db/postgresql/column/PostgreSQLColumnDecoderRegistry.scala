@@ -14,15 +14,15 @@
  * under the License.
  */
 
-package com.github.mauricio.async.db.postgresql.column
+package io.github.mavenrain.async.db.postgresql.column
 
-import com.github.mauricio.async.db.column._
-import com.github.mauricio.async.db.postgresql.column.ColumnTypes._
+import io.github.mavenrain.async.db.column._
+import io.github.mavenrain.async.db.postgresql.column.ColumnTypes._
 import scala.annotation.switch
 import java.nio.charset.Charset
 import io.netty.util.CharsetUtil
 import io.netty.buffer.ByteBuf
-import com.github.mauricio.async.db.general.ColumnData
+import io.github.mavenrain.async.db.general.ColumnData
 
 object PostgreSQLColumnDecoderRegistry {
   val Instance = new PostgreSQLColumnDecoderRegistry()
