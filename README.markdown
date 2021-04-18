@@ -220,8 +220,8 @@ Here's an example of how transactions work:
 ```scala
   val future = connection.inTransaction {
     c =>
-    c.sendPreparedStatement(this.insert)
-     .flatMap( r => c.sendPreparedStatement(this.insert))
+    c.sendPreparedStatement(insert)
+     .flatMap( r => c.sendPreparedStatement(insert))
   }
 ```
 

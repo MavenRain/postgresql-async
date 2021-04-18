@@ -2,14 +2,14 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [postgresql-async - an async Netty based PostgreSQL driver written in Scala 2.10 and 2.11](#postgresql-async---an-async-netty-based-postgresql-driver-written-in-scala-210)
+- [postgresql-async - an async Netty based PostgreSQL driver written in Scala 2.13](#postgresql-async---an-async-netty-based-postgresql-driver-written-in-scala-210)
 	- [What can it do now?](#what-can-it-do-now)
 	- [What is missing?](#what-is-missing)
 	- [Supported Scala/Java types and their destination types on PostgreSQL](#supported-scalajava-types-and-their-destination-types-on-postgresql)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# postgresql-async - an async Netty based PostgreSQL driver written in Scala 2.10 and 2.11
+# postgresql-async - an async Netty based PostgreSQL driver written in Scala 2.13
 
 The main goal of this project is to implement a performant and fully functional async PostgreSQL driver. This project
 has no interest in JDBC, it's supposed to be a clean room implementation for people interested in talking directly
@@ -93,5 +93,5 @@ DateTime | timestamp_with_timezone
 LocalTime | time
 
 Array types are encoded with the kind of object they hold and not the array type itself. Java `Collection` and
-Scala `Traversable` objects are also assumed to be arrays of the types they hold and will be sent to PostgreSQL
+Scala `Iterable` objects are also assumed to be arrays of the types they hold and will be sent to PostgreSQL
 like that.

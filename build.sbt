@@ -3,7 +3,7 @@ val commonVersion = "0.2.22-SNAPSHOT"
 val postgresqlName = "postgresql-async"
 val mysqlName = "mysql-async"
 val projectScalaVersion = "2.13.5"
-val specs2Version = "3.8.6"
+val specs2Version = "4.10.6"
 val specs2Dependency = "org.specs2" %% "specs2-core" % specs2Version % "test"
 val specs2JunitDependency = "org.specs2" %% "specs2-junit" % specs2Version % "test"
 val specs2MockDependency = "org.specs2" %% "specs2-mock" % specs2Version % "test"
@@ -14,7 +14,9 @@ val baseSettings = Seq(
       :+ Opts.compile.deprecation
       :+ Opts.compile.unchecked
       :+ "-feature"
+      :+ "-Xfatal-warnings"
   ,
+  scalaVersion := projectScalaVersion,
   testOptions in Test += Tests.Argument(TestFrameworks.Specs2, "sequential"),
   scalacOptions in doc := Seq("-doc-external-doc:scala=http://www.scala-lang.org/archives/downloads/distrib/files/nightly/docs/library/"),
   crossScalaVersions := Seq(projectScalaVersion),
