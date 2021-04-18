@@ -16,9 +16,11 @@
 
 package io.github.mavenrain.async.db.mysql.message.server
 
+import io.netty.buffer.ByteBuf
+import scala.collection.IterableOnce
 import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
-import io.netty.buffer.ByteBuf
+import scala.util.chaining.scalaUtilChainingOps
 
 class ResultSetRowMessage
   extends ServerMessage( ServerMessage.Row )
@@ -41,14 +43,18 @@ class ResultSetRowMessage
 
   def clear() = buffer.clear()
 
-  def insert(idx: Int, elem: io.netty.buffer.ByteBuf): Unit =
-    take(idx) :+ elem +: drop(idx)
-  def insertAll(idx: Int, elems: scala.collection.IterableOnce[io.netty.buffer.ByteBuf]): Unit =
-    take(idx) ++ elems ++ drop(idx)
-  def patchInPlace(from: Int, patch: scala.collection.IterableOnce[io.netty.buffer.ByteBuf], replaced: Int): this.type = this
-  def prepend(elem: io.netty.buffer.ByteBuf): this.type = this
+  def insert(idx: Int, elem: ByteBuf): Unit =
+    buffer.insert(idx, elem)
+    
+  def insertAll(idx: Int, elems: IterableOnce[ByteBuf]): Unit =
+    buffer.insertAll(idx, elems)
+    
+  def patchInPlace(from: Int, patch: IterableOnce[ByteBuf], replaced: Int): this.type =
+    buffer.patchInPlace(from, patch, replaced).pipe(_ => this)
+  def prepend(elem: ByteBuf): this.type =
+    buffer.prepend(elem).pipe(_ => this)
   def remove(idx: Int, count: Int): Unit =
-    take(idx) ++ drop(idx + 1)
+    buffer.remove(idx, count)
 
   def insertAll(n: Int, elems: Iterable[ByteBuf]) =
     buffer.insertAll(n, elems)
