@@ -89,13 +89,11 @@ class DecoderRegistry(charset: Charset) {
       case ColumnTypes.FIELD_TYPE_BIT => ByteArrayColumnDecoder
       case ColumnTypes.FIELD_TYPE_BLOB |
            ColumnTypes.FIELD_TYPE_VAR_STRING |
-           ColumnTypes.FIELD_TYPE_STRING => {
-        if (charsetCode == CharsetMapper.Binary) {
+           ColumnTypes.FIELD_TYPE_STRING =>
+        if (charsetCode == CharsetMapper.Binary)
           ByteArrayColumnDecoder
-        } else {
+        else
           StringEncoderDecoder
-        }
-      }
       case _ => StringEncoderDecoder
     }
 
