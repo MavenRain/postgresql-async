@@ -39,7 +39,7 @@ object CharsetMapper {
 
 class CharsetMapper( charsetsToIntComplement : Map[Charset,Int] = Map.empty[Charset,Int] ) {
 
-  private var charsetsToInt = CharsetMapper.DefaultCharsetsByCharset ++ charsetsToIntComplement
+  private val charsetsToInt = CharsetMapper.DefaultCharsetsByCharset ++ charsetsToIntComplement
 
   def toInt( charset : Charset ) : Int = {
     charsetsToInt.getOrElse(charset, {

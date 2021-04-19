@@ -20,7 +20,6 @@ import io.netty.buffer.ByteBuf
 import io.github.mavenrain.async.db.mysql.message.server.{ErrorMessage, ServerMessage}
 import io.github.mavenrain.async.db.util.ChannelWrapper.bufferToWrapper
 import java.nio.charset.Charset
-import scala.language.implicitConversions
 
 class ErrorDecoder( charset : Charset ) extends MessageDecoder {
 

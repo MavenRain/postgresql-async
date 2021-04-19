@@ -15,6 +15,7 @@ val baseSettings = Seq(
       :+ Opts.compile.unchecked
       :+ "-feature"
       :+ "-Xfatal-warnings"
+      :+ "-Wunused:imports,privates,locals,implicits"
   ,
   scalaVersion := projectScalaVersion,
   testOptions in Test += Tests.Argument(TestFrameworks.Specs2, "sequential"),

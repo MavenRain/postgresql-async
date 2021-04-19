@@ -42,7 +42,7 @@ import io.netty.handler.codec.CodecException
 import io.netty.handler.ssl.{SslContextBuilder, SslHandler}
 import io.netty.handler.ssl.util.InsecureTrustManagerFactory
 import io.netty.util.concurrent.FutureListener
-import javax.net.ssl.{SSLParameters, TrustManagerFactory}
+import javax.net.ssl.TrustManagerFactory
 import java.security.KeyStore
 import java.io.FileInputStream
 
@@ -75,7 +75,7 @@ class PostgreSQLConnectionHandler
   private final val bootstrap = new Bootstrap()
   private final val connectionFuture = Promise[PostgreSQLConnectionHandler]()
   private final val disconnectionPromise = Promise[PostgreSQLConnectionHandler]()
-  private var processData : ProcessData = null
+  protected var processData : ProcessData = null
 
   private var currentContext : ChannelHandlerContext = null
 

@@ -16,7 +16,7 @@
 
 package io.github.mavenrain.async.db.postgresql.encoders
 
-import io.github.mavenrain.async.db.postgresql.messages.frontend.{ClientMessage, StartupMessage}
+import io.github.mavenrain.async.db.postgresql.messages.frontend.StartupMessage
 import io.github.mavenrain.async.db.util.ByteBufferUtils
 import java.nio.charset.Charset
 import io.netty.buffer.{Unpooled, ByteBuf}

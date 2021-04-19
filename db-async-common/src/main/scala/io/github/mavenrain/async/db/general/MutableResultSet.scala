@@ -19,14 +19,14 @@ package io.github.mavenrain.async.db.general
 import collection.mutable.ArrayBuffer
 import io.github.mavenrain.async.db.{RowData, ResultSet}
 import io.github.mavenrain.async.db.util.Log
-import scala.util.chaining.scalaUtilChainingOps
 
 object MutableResultSet {
   val log = Log.get[MutableResultSet[Nothing]]
 }
 
 class MutableResultSet[T <: ColumnData](
-                        val columnTypes: IndexedSeq[T]) extends ResultSet {
+  val columnTypes: IndexedSeq[T]
+) extends ResultSet {
 
   private val rows = new ArrayBuffer[RowData]()
   private val columnMapping: Map[String, Int] = columnTypes.indices.map(

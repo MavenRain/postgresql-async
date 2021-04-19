@@ -43,7 +43,7 @@ class HandshakeV10Decoder(charset: Charset) extends MessageDecoder {
     val serverVersion = buffer.readCString(ASCII)
     val connectionId = buffer.readUnsignedInt()
 
-    var seed = new Array[Byte](SeedSize + SeedComplementSize)
+    val seed = new Array[Byte](SeedSize + SeedComplementSize)
     buffer.readBytes(seed, 0, SeedSize)
 
     buffer.readByte() // filler

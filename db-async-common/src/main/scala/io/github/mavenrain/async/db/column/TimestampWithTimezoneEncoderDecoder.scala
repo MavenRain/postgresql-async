@@ -16,7 +16,6 @@
 
 package io.github.mavenrain.async.db.column
 
-import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
 
 object TimestampWithTimezoneEncoderDecoder extends TimestampEncoderDecoder {

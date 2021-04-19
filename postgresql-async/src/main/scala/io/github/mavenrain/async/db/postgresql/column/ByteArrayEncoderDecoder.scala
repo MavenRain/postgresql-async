@@ -17,7 +17,6 @@
 package io.github.mavenrain.async.db.postgresql.column
 
 import io.github.mavenrain.async.db.column.ColumnEncoderDecoder
-import io.github.mavenrain.async.db.postgresql.exceptions.ByteArrayFormatNotSupportedException
 import io.github.mavenrain.async.db.util.{ Log, HexCodec }
 import java.nio.ByteBuffer
 

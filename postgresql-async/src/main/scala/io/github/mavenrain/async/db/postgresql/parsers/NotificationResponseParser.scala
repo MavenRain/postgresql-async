@@ -16,7 +16,6 @@
 
 package io.github.mavenrain.async.db.postgresql.parsers
 
-import language.implicitConversions
 import java.nio.charset.Charset
 import io.netty.buffer.ByteBuf
 import io.github.mavenrain.async.db.postgresql.messages.backend.{NotificationResponse, ServerMessage}

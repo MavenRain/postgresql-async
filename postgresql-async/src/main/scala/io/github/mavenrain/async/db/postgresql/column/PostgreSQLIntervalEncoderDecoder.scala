@@ -19,13 +19,10 @@ package io.github.mavenrain.async.db.postgresql.column
 
 import io.github.mavenrain.async.db.column.ColumnEncoderDecoder
 import io.github.mavenrain.async.db.exceptions.DateEncoderNotAvailableException
-import io.github.mavenrain.async.db.util.Log
 import org.joda.time.{Period, ReadablePeriod, ReadableDuration}
 import org.joda.time.format.{ISOPeriodFormat, PeriodFormatterBuilder}
 
 object PostgreSQLIntervalEncoderDecoder extends ColumnEncoderDecoder {
-
-  private val log = Log.getByName(getClass.getName)
 
   /* Postgres accepts all ISO8601 formats. */
   private val formatter = ISOPeriodFormat.standard

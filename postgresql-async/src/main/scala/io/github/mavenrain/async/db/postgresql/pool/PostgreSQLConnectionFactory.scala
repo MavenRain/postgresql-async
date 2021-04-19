@@ -23,8 +23,6 @@ import io.github.mavenrain.async.db.postgresql.PostgreSQLConnection
 import io.github.mavenrain.async.db.util.Log
 import java.nio.channels.ClosedChannelException
 import scala.concurrent.Await
-import scala.concurrent.duration._
-import scala.language.postfixOps
 import scala.util.{Success, Failure, Try}
 import scala.concurrent.ExecutionContext
 import io.github.mavenrain.async.db.util.ExecutorServiceUtils

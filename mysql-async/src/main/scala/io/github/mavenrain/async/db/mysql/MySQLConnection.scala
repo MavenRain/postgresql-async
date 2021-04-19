@@ -68,7 +68,7 @@ class MySQLConnection(
   private final val disconnectionPromise = Promise[Connection]()
 
   private val queryPromiseReference = new AtomicReference[Option[Promise[QueryResult]]](None)
-  private var connected = false
+  protected var connected = false
   private var _lastException : Throwable = null
   private var serverVersion : Version = null
 

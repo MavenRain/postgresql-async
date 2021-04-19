@@ -71,7 +71,7 @@ class PostgreSQLConnection
 
   private val parameterStatus = new scala.collection.mutable.HashMap[String, String]()
   private val parsedStatements = new scala.collection.mutable.HashMap[String, PreparedStatementHolder]()
-  private var authenticated = false
+  protected var authenticated = false
 
   private val connectionFuture = Promise[Connection]()
 
@@ -79,8 +79,8 @@ class PostgreSQLConnection
   private val queryPromiseReference = new AtomicReference[Option[Promise[QueryResult]]](None)
   private var currentQuery: Option[MutableResultSet[PostgreSQLColumnData]] = None
   private var currentPreparedStatement: Option[PreparedStatementHolder] = None
-  private var version = Version(0,0,0)
-  private var notifyListeners = new CopyOnWriteArrayList[NotificationResponse => Unit]()
+  protected var version = Version(0,0,0)
+  protected var notifyListeners = new CopyOnWriteArrayList[NotificationResponse => Unit]()
   
   private var queryResult: Option[QueryResult] = None
 

@@ -20,7 +20,6 @@ import io.github.mavenrain.async.db.column.ColumnEncoderDecoder
 import io.github.mavenrain.async.db.exceptions.DateEncoderNotAvailableException
 import io.github.mavenrain.async.db.general.ColumnData
 import io.github.mavenrain.async.db.postgresql.messages.backend.PostgreSQLColumnData
-import io.github.mavenrain.async.db.util.Log
 import io.netty.buffer.ByteBuf
 import java.nio.charset.Charset
 import java.sql.Timestamp
@@ -29,8 +28,6 @@ import org.joda.time._
 import org.joda.time.format.DateTimeFormatterBuilder
 
 object PostgreSQLTimestampEncoderDecoder extends ColumnEncoderDecoder {
-
-  private val log = Log.getByName(getClass.getName)
 
   private val optionalTimeZone = new DateTimeFormatterBuilder()
     .appendPattern("Z").toParser

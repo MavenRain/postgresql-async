@@ -1,5 +1,8 @@
 package io.github.mavenrain.async.db.column
 
+import io.netty.buffer.ByteBuf
+import io.github.mavenrain.async.db.general.ColumnData
+import java.nio.charset.Charset
 import java.sql.Timestamp
 import java.util.{Calendar, Date}
 import org.joda.time.{DateTime, LocalDateTime, ReadableDateTime}
@@ -11,7 +14,6 @@ import shapeless.{:+:, CNil, Coproduct, Poly1}
 object TimestampEncoderDecoderNext {
   private val BaseFormat = "yyyy-MM-dd HH:mm:ss"
   private val MillisFormat = ".SSSSSS"
-  private val Instance = new TimestampEncoderDecoder()
   private val optional = new DateTimeFormatterBuilder()
     .appendPattern(MillisFormat).toParser
   private val optionalTimeZone = new DateTimeFormatterBuilder()
@@ -37,4 +39,8 @@ object TimestampEncoderDecoderNext {
       error => Coproduct[LocalDateTime :+: ColumnError.Error :+: CNil](ColumnError(error.getMessage)),
       Coproduct[LocalDateTime :+: ColumnError.Error :+: CNil](_)
     )
+  def decode(kind: ColumnData, value: ByteBuf, charset: Charset): LocalDateTime :+: ColumnError.Error :+: CNil =
+    new Array[Byte](value.readableBytes())
+      .tap(value.readBytes(_))
+      .pipe(bytes => decode(new String(bytes, charset)))
 }

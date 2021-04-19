@@ -18,13 +18,11 @@ package io.github.mavenrain.async.db.mysql.binary.encoder
 
 import io.netty.buffer.ByteBuf
 import io.github.mavenrain.async.db.mysql.column.ColumnTypes
-import io.github.mavenrain.async.db.util.Log
 
 object ByteEncoder extends BinaryEncoder {
 
-  def encode(value: Any, buffer: ByteBuf): Unit = {
+  def encode(value: Any, buffer: ByteBuf): Unit =
     buffer.writeByte(value.asInstanceOf[Byte])
-  }
 
   def encodesTo: Int = ColumnTypes.FIELD_TYPE_TINY
 }

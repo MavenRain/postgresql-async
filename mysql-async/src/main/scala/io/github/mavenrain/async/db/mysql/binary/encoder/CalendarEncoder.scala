@@ -18,7 +18,7 @@ package io.github.mavenrain.async.db.mysql.binary.encoder
 
 import io.netty.buffer.ByteBuf
 import java.util.Calendar
-import org.joda.time.{LocalDateTime, DateTime}
+import org.joda.time.LocalDateTime
 import io.github.mavenrain.async.db.mysql.column.ColumnTypes
 
 object CalendarEncoder extends BinaryEncoder {

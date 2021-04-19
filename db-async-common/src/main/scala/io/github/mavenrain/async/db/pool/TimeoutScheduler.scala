@@ -8,7 +8,7 @@ import scala.concurrent.duration.Duration
 
 trait TimeoutScheduler {
 
-  private var isTimeoutedBool = new AtomicBoolean(false)
+  protected var isTimeoutedBool = new AtomicBoolean(false)
 
   /**
    *

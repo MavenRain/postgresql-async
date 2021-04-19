@@ -1,7 +1,6 @@
 package io.github.mavenrain.async.db.mysql.encoder.auth
 
 import java.nio.charset.Charset
-import java.nio.CharBuffer
 
 object OldPasswordAuthentication extends AuthenticationMethod {
 

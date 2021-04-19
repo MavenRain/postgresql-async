@@ -17,7 +17,7 @@
 package io.github.mavenrain.async.db.mysql.decoder
 
 import io.github.mavenrain.async.db.mysql.message.server.{PreparedStatementPrepareResponse, ServerMessage}
-import io.github.mavenrain.async.db.util.{BufferDumper, Log}
+import io.github.mavenrain.async.db.util.Log
 import io.netty.buffer.ByteBuf
 
 class PreparedStatementPrepareResponseDecoder extends MessageDecoder {

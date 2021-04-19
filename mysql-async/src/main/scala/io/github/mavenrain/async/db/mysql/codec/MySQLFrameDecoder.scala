@@ -25,7 +25,6 @@ import io.github.mavenrain.async.db.util.{BufferDumper, Log}
 import io.netty.buffer.ByteBuf
 import io.netty.channel.ChannelHandlerContext
 import io.netty.handler.codec.ByteToMessageDecoder
-import java.nio.ByteOrder
 import java.nio.charset.Charset
 import java.util.concurrent.atomic.AtomicInteger
 
@@ -40,7 +39,6 @@ class MySQLFrameDecoder(charset: Charset, connectionId: String) extends ByteToMe
   private final val columnDecoder = new ColumnDefinitionDecoder(charset, new DecoderRegistry(charset))
   private final val rowDecoder = new ResultSetRowDecoder(charset)
   private final val preparedStatementPrepareDecoder = new PreparedStatementPrepareResponseDecoder()
-  private final val authenticationSwitchDecoder = new AuthenticationSwitchRequestDecoder(charset)
 
   private[codec] var processingColumns = false
   private[codec] var processingParams = false
@@ -64,7 +62,7 @@ class MySQLFrameDecoder(charset: Charset, connectionId: String) extends ByteToMe
 
       val size = read3BytesInt(buffer)
 
-      val sequence = buffer.readUnsignedByte() // we have to read this
+      val _ = buffer.readUnsignedByte() // we have to read this
 
       if (buffer.readableBytes() >= size) {
 
